@@ -19,9 +19,10 @@ namespace System_Magazynowy
 
         private void przejdz_do_strony_klientow_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Strona_Klientow klient = new Strona_Klientow();
             klient.Show();
+            this.Hide();
+
         }
 
         private void zamknij_Click(object sender, EventArgs e)

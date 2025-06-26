@@ -82,13 +82,14 @@
             this.Controls.Add(this.zamknij);
             this.Controls.Add(this.przejdz_do_strony_klientow);
             this.Controls.Add(this.tytul_systemu);
-            this.Cursor = System.Windows.Forms.Cursors.PanNW;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;
             this.Name = "Strona_Glowna";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

@@ -14,6 +14,7 @@ namespace System_Magazynowy
             String nazwisko_klienta;
             String firma_klienta;
             String miejscowosc_klienta;
+            int wartosc_dochodu;
             DateTime data_dodania_klienta;
     }
 }
