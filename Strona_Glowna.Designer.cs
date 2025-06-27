@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tytul_systemu = new System.Windows.Forms.Label();
             this.przejdz_do_strony_klientow = new System.Windows.Forms.Button();
             this.zamknij = new System.Windows.Forms.Button();
+            this.przycisk_usun_rekord_produktu = new System.Windows.Forms.Button();
+            this.tabela = new System.Windows.Forms.DataGridView();
+            this.a = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dodaj_nowy_produkt = new System.Windows.Forms.Button();
+            this.tytul_klienci = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.tabela)).BeginInit();
             this.SuspendLayout();
             // 
             // tytul_systemu
@@ -66,19 +74,104 @@
             this.zamknij.Cursor = System.Windows.Forms.Cursors.Hand;
             this.zamknij.Font = new System.Drawing.Font("Monotxt_IV25", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zamknij.ForeColor = System.Drawing.Color.Peru;
-            this.zamknij.Location = new System.Drawing.Point(832, 442);
+            this.zamknij.Location = new System.Drawing.Point(760, 426);
             this.zamknij.Name = "zamknij";
-            this.zamknij.Size = new System.Drawing.Size(110, 40);
+            this.zamknij.Size = new System.Drawing.Size(137, 47);
             this.zamknij.TabIndex = 2;
             this.zamknij.Text = "zamknij";
             this.zamknij.UseCompatibleTextRendering = true;
             this.zamknij.UseVisualStyleBackColor = true;
             this.zamknij.Click += new System.EventHandler(this.zamknij_Click);
             // 
+            // przycisk_usun_rekord_produktu
+            // 
+            this.przycisk_usun_rekord_produktu.BackColor = System.Drawing.Color.Snow;
+            this.przycisk_usun_rekord_produktu.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.przycisk_usun_rekord_produktu.ForeColor = System.Drawing.Color.Peru;
+            this.przycisk_usun_rekord_produktu.Location = new System.Drawing.Point(543, 426);
+            this.przycisk_usun_rekord_produktu.Name = "przycisk_usun_rekord_produktu";
+            this.przycisk_usun_rekord_produktu.Size = new System.Drawing.Size(142, 47);
+            this.przycisk_usun_rekord_produktu.TabIndex = 15;
+            this.przycisk_usun_rekord_produktu.Text = "usuń";
+            this.przycisk_usun_rekord_produktu.UseCompatibleTextRendering = true;
+            this.przycisk_usun_rekord_produktu.UseVisualStyleBackColor = false;
+            // 
+            // tabela
+            // 
+            this.tabela.BackgroundColor = System.Drawing.Color.BlanchedAlmond;
+            this.tabela.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabela.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.tabela.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.BlanchedAlmond;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Peru;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Sienna;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabela.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.tabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabela.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.a});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.BlanchedAlmond;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tabela.DefaultCellStyle = dataGridViewCellStyle2;
+            this.tabela.EnableHeadersVisualStyles = false;
+            this.tabela.Location = new System.Drawing.Point(235, 148);
+            this.tabela.Name = "tabela";
+            this.tabela.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.tabela.RowHeadersVisible = false;
+            this.tabela.RowHeadersWidth = 51;
+            this.tabela.RowTemplate.Height = 24;
+            this.tabela.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tabela.Size = new System.Drawing.Size(685, 218);
+            this.tabela.TabIndex = 14;
+            // 
+            // a
+            // 
+            this.a.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.a.HeaderText = "*";
+            this.a.MinimumWidth = 6;
+            this.a.Name = "a";
+            this.a.Width = 30;
+            // 
+            // dodaj_nowy_produkt
+            // 
+            this.dodaj_nowy_produkt.BackColor = System.Drawing.Color.Snow;
+            this.dodaj_nowy_produkt.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dodaj_nowy_produkt.ForeColor = System.Drawing.Color.Peru;
+            this.dodaj_nowy_produkt.Location = new System.Drawing.Point(271, 426);
+            this.dodaj_nowy_produkt.Name = "dodaj_nowy_produkt";
+            this.dodaj_nowy_produkt.Size = new System.Drawing.Size(195, 47);
+            this.dodaj_nowy_produkt.TabIndex = 13;
+            this.dodaj_nowy_produkt.Text = "dodaj nowy produkt";
+            this.dodaj_nowy_produkt.UseCompatibleTextRendering = true;
+            this.dodaj_nowy_produkt.UseVisualStyleBackColor = false;
+            // 
+            // tytul_klienci
+            // 
+            this.tytul_klienci.AutoSize = true;
+            this.tytul_klienci.Font = new System.Drawing.Font("Monotxt_IV25", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tytul_klienci.ForeColor = System.Drawing.Color.Peru;
+            this.tytul_klienci.Location = new System.Drawing.Point(113, -45);
+            this.tytul_klienci.Name = "tytul_klienci";
+            this.tytul_klienci.Size = new System.Drawing.Size(503, 53);
+            this.tytul_klienci.TabIndex = 12;
+            this.tytul_klienci.Text = "Strona Klientów";
+            // 
             // Strona_Glowna
             // 
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(966, 494);
+            this.Controls.Add(this.przycisk_usun_rekord_produktu);
+            this.Controls.Add(this.tabela);
+            this.Controls.Add(this.dodaj_nowy_produkt);
+            this.Controls.Add(this.tytul_klienci);
             this.Controls.Add(this.zamknij);
             this.Controls.Add(this.przejdz_do_strony_klientow);
             this.Controls.Add(this.tytul_systemu);
@@ -87,6 +180,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;
             this.Name = "Strona_Glowna";
+            ((System.ComponentModel.ISupportInitialize)(this.tabela)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,6 +191,11 @@
         private System.Windows.Forms.Label tytul_systemu;
         private System.Windows.Forms.Button przejdz_do_strony_klientow;
         private System.Windows.Forms.Button zamknij;
+        private System.Windows.Forms.Button przycisk_usun_rekord_produktu;
+        private System.Windows.Forms.DataGridView tabela;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn a;
+        private System.Windows.Forms.Button dodaj_nowy_produkt;
+        private System.Windows.Forms.Label tytul_klienci;
     }
 }
 

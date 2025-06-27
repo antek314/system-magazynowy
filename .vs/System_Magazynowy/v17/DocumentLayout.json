@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|c:\\users\\anton\\onedrive\\desktop\\informatics\\visual studio\\system_magazynowy\\strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|c:\\users\\anton\\onedrive\\desktop\\informatics\\visual studio\\system_magazynowy\\strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|c:\\users\\anton\\onedrive\\desktop\\informatics\\visual studio\\system_magazynowy\\klient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:klient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Klient.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Klient.cs",
+              "RelativeDocumentMoniker": "Klient.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Klient.cs",
+              "RelativeToolTip": "Klient.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T09:26:20.72Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Strona_Glowna.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Glowna.cs",
+              "RelativeDocumentMoniker": "Strona_Glowna.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Glowna.cs [Design]",
+              "RelativeToolTip": "Strona_Glowna.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T15:32:58.899Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Strona_Glowna.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Glowna.cs",
+              "RelativeDocumentMoniker": "Strona_Glowna.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Glowna.cs",
+              "RelativeToolTip": "Strona_Glowna.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T15:32:19.702Z",
+              "EditorCaption": ""
             }
           ]
         }

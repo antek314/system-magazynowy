@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 
 namespace System_Magazynowy
 {
@@ -33,25 +34,16 @@ namespace System_Magazynowy
 
         private void dodaj_klienta_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
-            SqlCommand cmd;
-            string zapytanie = "Insert Into Klienci(imie,nazwisko,miejscowosc,firma,dochod,data)Values(@imie,@nazwisko,@miejscowosc,@firma,@dochod,@data)";
-            cmd = new SqlCommand(zapytanie, conn);
-            cmd.Parameters.Clear();
-
-            cmd.Parameters.AddWithValue("imie", imieTextBox.Text);
-            cmd.Parameters.AddWithValue("nazwisko", nazwiskoTextBox.Text);
-            cmd.Parameters.AddWithValue("miejscowosc", miejscowoscTextBox.Text);
-            cmd.Parameters.AddWithValue("firma", firmaTextBox.Text);
-            cmd.Parameters.AddWithValue("dochod", prz2.Text);
-            cmd.Parameters.AddWithValue("data", dat2.Value);
-
-            conn.Open();
-
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            string data = DateTime.Now.ToShortDateString();
+            if (dat2.Text != "")
+            {
+                data = dat2.Text;
+            }
+            Klient klient = new Klient(imieTextBox.Text, nazwiskoTextBox.Text, miejscowoscTextBox.Text, firmaTextBox.Text, Int32.Parse(prz2.Text), data);
+            string a = imieTextBox.Text;
+            string b = nazwiskoTextBox.Text;
             this.Close();
-            MessageBox.Show("Dodano nowego klienta " + this.imieTextBox.Text + " " + this.nazwiskoTextBox.Text);
+            MessageBox.Show("Dodano nowego klienta " + a + " " + b + ". Teraz w bazie jest " + klient.ZwrocLiczbeKlientow() + " klientow");
         }
     }
 }

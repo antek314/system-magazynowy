@@ -17,41 +17,20 @@ namespace System_Magazynowy
     {
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
         SqlCommand cmd;
-        void Odswiez(ListView tab)
+
+        void ZapelnijTabeleDanymi()
         {
-
-            string zapytaniee = "Select COUNT(*) From Klienci";
-            cmd = new SqlCommand(zapytaniee, conn);
-            cmd.Parameters.Clear();
-            conn.Open();
-            int liczba_rekordow = (Int32)cmd.ExecuteScalar();
-            conn.Close();
-
-            string [] zapytanie = { "Select id_klienta From Klienci Where id_klienta = @liczba", 
-                "Select imie From Klienci Where id_klienta = @liczba", 
-                "Select nazwisko From Klienci Where id_klienta = @liczba", 
-                "Select miejscowosc From Klienci Where id_klienta = @liczba", 
-                "Select firma From Klienci Where id_klienta = @liczba",
-                "Select data From Klienci Where id_klienta = @liczba",
-                "Select dochod From Klienci Where id_klienta = @liczba"};
-            string [] tablica_wynikowa = new string[7];
-
-            tabela_klientow.Items.Clear();
-
-            for (int m = 1; m <= liczba_rekordow; m++)
+            string sql = "SELECT * FROM Klienci";
+            using (conn)
             {
-                for (int n = 0; n < zapytanie.Length; n++ )
+                using (SqlDataAdapter sda = new SqlDataAdapter(sql, conn))
                 {
-                    cmd = new SqlCommand(zapytanie[n], conn);
-                    cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("liczba", m);
-                    conn.Open();
-                    tablica_wynikowa[n] = cmd.ExecuteScalar().ToString();
-                    conn.Close();
+                    using (DataTable dt = new DataTable())
+                    {
+                        sda.Fill(dt);
+                        tabela.DataSource = dt;
+                    }
                 }
-                ListViewItem list = new ListViewItem(tablica_wynikowa);
-                tabela_klientow.Items.Add(list);
-
             }
 
         }
@@ -65,7 +44,6 @@ namespace System_Magazynowy
             Strona_Glowna glowna = new Strona_Glowna();
             glowna.Show();
             this.Hide();
-
         }
 
         private void dodaj_klienta_Click(object sender, EventArgs e)
@@ -76,9 +54,7 @@ namespace System_Magazynowy
 
         private void Strona_Klientow_Load(object sender, EventArgs e)
         {
-            Odswiez(tabela_klientow);
-
-            // TODO: This line of code loads data into the 'dataBaseSystemDataSet.Klienci' table. You can move, or remove it, as needed.
+            ZapelnijTabeleDanymi();
         }
     }
 }

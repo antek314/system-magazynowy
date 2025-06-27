@@ -51,7 +51,7 @@
             this.dodaj_klienta.BackColor = System.Drawing.Color.PapayaWhip;
             this.dodaj_klienta.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dodaj_klienta.ForeColor = System.Drawing.Color.Peru;
-            this.dodaj_klienta.Location = new System.Drawing.Point(57, 366);
+            this.dodaj_klienta.Location = new System.Drawing.Point(58, 366);
             this.dodaj_klienta.Name = "dodaj_klienta";
             this.dodaj_klienta.Size = new System.Drawing.Size(221, 35);
             this.dodaj_klienta.TabIndex = 6;
@@ -65,7 +65,7 @@
             this.zamknij_dodawanie_klienta.BackColor = System.Drawing.Color.PapayaWhip;
             this.zamknij_dodawanie_klienta.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zamknij_dodawanie_klienta.ForeColor = System.Drawing.Color.Peru;
-            this.zamknij_dodawanie_klienta.Location = new System.Drawing.Point(515, 366);
+            this.zamknij_dodawanie_klienta.Location = new System.Drawing.Point(497, 366);
             this.zamknij_dodawanie_klienta.Name = "zamknij_dodawanie_klienta";
             this.zamknij_dodawanie_klienta.Size = new System.Drawing.Size(234, 35);
             this.zamknij_dodawanie_klienta.TabIndex = 5;
@@ -87,7 +87,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.Peru;
-            this.checkBox1.Location = new System.Drawing.Point(45, 268);
+            this.checkBox1.Location = new System.Drawing.Point(36, 283);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(112, 28);
             this.checkBox1.TabIndex = 10;
@@ -111,7 +111,7 @@
             this.imie_label.AutoSize = true;
             this.imie_label.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.imie_label.ForeColor = System.Drawing.Color.Peru;
-            this.imie_label.Location = new System.Drawing.Point(54, 156);
+            this.imie_label.Location = new System.Drawing.Point(53, 156);
             this.imie_label.Name = "imie_label";
             this.imie_label.Size = new System.Drawing.Size(74, 24);
             this.imie_label.TabIndex = 13;
@@ -176,9 +176,11 @@
             // 
             // dat2
             // 
-            this.dat2.Location = new System.Drawing.Point(206, 297);
+            this.dat2.Font = new System.Drawing.Font("Monotxt_IV25", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dat2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dat2.Location = new System.Drawing.Point(224, 293);
             this.dat2.Name = "dat2";
-            this.dat2.Size = new System.Drawing.Size(216, 22);
+            this.dat2.Size = new System.Drawing.Size(209, 30);
             this.dat2.TabIndex = 21;
             this.dat2.Visible = false;
             // 
@@ -187,7 +189,7 @@
             this.dat1.AutoSize = true;
             this.dat1.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dat1.ForeColor = System.Drawing.Color.Peru;
-            this.dat1.Location = new System.Drawing.Point(214, 268);
+            this.dat1.Location = new System.Drawing.Point(231, 266);
             this.dat1.Name = "dat1";
             this.dat1.Size = new System.Drawing.Size(202, 24);
             this.dat1.TabIndex = 22;
@@ -209,7 +211,7 @@
             this.prz1.AutoSize = true;
             this.prz1.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prz1.ForeColor = System.Drawing.Color.Peru;
-            this.prz1.Location = new System.Drawing.Point(483, 268);
+            this.prz1.Location = new System.Drawing.Point(484, 268);
             this.prz1.Name = "prz1";
             this.prz1.Size = new System.Drawing.Size(266, 24);
             this.prz1.TabIndex = 24;

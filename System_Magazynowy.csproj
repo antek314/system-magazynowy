@@ -177,6 +177,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBaseSystemDataSet.cs">
+      <DependentUpon>DataBaseSystemDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataBaseSystemDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
