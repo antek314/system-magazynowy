@@ -185,6 +185,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBaseSystemDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataBaseSystemDostawcy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBaseSystemDostawcy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dostawca.cs" />
+    <Compile Include="Produkt.cs" />
+    <Compile Include="Strona_Dostawcow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strona_Dostawcow.Designer.cs">
+      <DependentUpon>Strona_Dostawcow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strona_Dodawania_Dostawcy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strona_Dodawania_Dostawcy.Designer.cs">
+      <DependentUpon>Strona_Dodawania_Dostawcy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Strona_Dodawania_Klienta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +225,12 @@
     <Compile Include="Strona_Klientow.Designer.cs">
       <DependentUpon>Strona_Klientow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Strona_Dostawcow.resx">
+      <DependentUpon>Strona_Dostawcow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strona_Dodawania_Dostawcy.resx">
+      <DependentUpon>Strona_Dodawania_Dostawcy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Strona_Dodawania_Klienta.resx">
       <DependentUpon>Strona_Dodawania_Klienta.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +259,17 @@
     </None>
     <None Include="DataBaseSystemDataSet.xss">
       <DependentUpon>DataBaseSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseSystemDostawcy.xsc">
+      <DependentUpon>DataBaseSystemDostawcy.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseSystemDostawcy.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaseSystemDostawcy.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBaseSystemDostawcy.xss">
+      <DependentUpon>DataBaseSystemDostawcy.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

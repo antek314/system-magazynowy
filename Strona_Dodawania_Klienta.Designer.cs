@@ -81,6 +81,7 @@
             this.imieTextBox.Name = "imieTextBox";
             this.imieTextBox.Size = new System.Drawing.Size(120, 32);
             this.imieTextBox.TabIndex = 7;
+            this.imieTextBox.TextChanged += new System.EventHandler(this.imieTextBox_TextChanged);
             // 
             // checkBox1
             // 
@@ -105,6 +106,7 @@
             this.tytul_dodaj_klienta.Size = new System.Drawing.Size(439, 53);
             this.tytul_dodaj_klienta.TabIndex = 12;
             this.tytul_dodaj_klienta.Text = "Dodaj Klienta";
+            this.tytul_dodaj_klienta.Click += new System.EventHandler(this.tytul_dodaj_klienta_Click);
             // 
             // imie_label
             // 
@@ -116,6 +118,7 @@
             this.imie_label.Size = new System.Drawing.Size(74, 24);
             this.imie_label.TabIndex = 13;
             this.imie_label.Text = "imie";
+            this.imie_label.Click += new System.EventHandler(this.imie_label_Click);
             // 
             // label2
             // 
@@ -127,6 +130,7 @@
             this.label2.Size = new System.Drawing.Size(138, 24);
             this.label2.TabIndex = 15;
             this.label2.Text = "nazwisko";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // nazwiskoTextBox
             // 
@@ -135,6 +139,7 @@
             this.nazwiskoTextBox.Name = "nazwiskoTextBox";
             this.nazwiskoTextBox.Size = new System.Drawing.Size(154, 32);
             this.nazwiskoTextBox.TabIndex = 14;
+            this.nazwiskoTextBox.TextChanged += new System.EventHandler(this.nazwiskoTextBox_TextChanged);
             // 
             // label3
             // 
@@ -146,6 +151,7 @@
             this.label3.Size = new System.Drawing.Size(186, 24);
             this.label3.TabIndex = 17;
             this.label3.Text = "miejscowość";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // miejscowoscTextBox
             // 
@@ -154,6 +160,7 @@
             this.miejscowoscTextBox.Name = "miejscowoscTextBox";
             this.miejscowoscTextBox.Size = new System.Drawing.Size(198, 32);
             this.miejscowoscTextBox.TabIndex = 16;
+            this.miejscowoscTextBox.TextChanged += new System.EventHandler(this.miejscowoscTextBox_TextChanged);
             // 
             // label4
             // 
@@ -165,6 +172,7 @@
             this.label4.Size = new System.Drawing.Size(90, 24);
             this.label4.TabIndex = 19;
             this.label4.Text = "firma";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // firmaTextBox
             // 
@@ -173,6 +181,7 @@
             this.firmaTextBox.Name = "firmaTextBox";
             this.firmaTextBox.Size = new System.Drawing.Size(118, 32);
             this.firmaTextBox.TabIndex = 18;
+            this.firmaTextBox.TextChanged += new System.EventHandler(this.firmaTextBox_TextChanged);
             // 
             // dat2
             // 
@@ -183,6 +192,7 @@
             this.dat2.Size = new System.Drawing.Size(209, 30);
             this.dat2.TabIndex = 21;
             this.dat2.Visible = false;
+            this.dat2.ValueChanged += new System.EventHandler(this.dat2_ValueChanged);
             // 
             // dat1
             // 
@@ -195,6 +205,7 @@
             this.dat1.TabIndex = 22;
             this.dat1.Text = "data dodania";
             this.dat1.Visible = false;
+            this.dat1.Click += new System.EventHandler(this.dat1_Click);
             // 
             // prz2
             // 
@@ -205,6 +216,7 @@
             this.prz2.TabIndex = 23;
             this.prz2.Text = "0";
             this.prz2.Visible = false;
+            this.prz2.TextChanged += new System.EventHandler(this.prz2_TextChanged);
             // 
             // prz1
             // 
@@ -217,6 +229,7 @@
             this.prz1.TabIndex = 24;
             this.prz1.Text = "przychód klienta";
             this.prz1.Visible = false;
+            this.prz1.Click += new System.EventHandler(this.prz1_Click);
             // 
             // Strona_Dodawania_Klienta
             // 

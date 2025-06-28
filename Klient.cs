@@ -11,20 +11,20 @@ namespace System_Magazynowy
 {
     internal class Klient
     {
-        private
-            int id_klienta = 0;
-        String imie_klienta;
-        String nazwisko_klienta;
-        String firma_klienta;
-        String miejscowosc_klienta;
-        int wartosc_dochodu;
-        string data_dodania_klienta;
-        static int liczba_klientow;
+        private int id_klienta = 0;
+        private String imie_klienta;
+        private String nazwisko_klienta;
+        private String firma_klienta;
+        private String miejscowosc_klienta;
+        private float wartosc_dochodu;
+        private string data_dodania_klienta;
+        private static int liczba_klientow;
+        private SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
+        private SqlCommand cmd;
 
-        void DodajDoBazyDanych()
+        private void DodajDoBazyDanych()
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
-            SqlCommand cmd;
+
             string zapytanie = "Insert Into Klienci(imie,nazwisko,miejscowosc,firma,dochod,data)Values(@imie,@nazwisko,@miejscowosc,@firma,@dochod,@data)";
             cmd = new SqlCommand(zapytanie, conn);
             cmd.Parameters.Clear();
@@ -41,10 +41,8 @@ namespace System_Magazynowy
             cmd.ExecuteNonQuery();
             conn.Close();
         }
-        void DopiszNumerId()
+        private void DopiszNumerId()
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
-            SqlCommand cmd;
             string zapytanie = "Select Top 1 id_klienta From Klienci Order By id_klienta DESC";
             cmd = new SqlCommand(zapytanie, conn);
             cmd.Parameters.Clear();
@@ -56,10 +54,8 @@ namespace System_Magazynowy
             id_klienta = (int)cmd.ExecuteScalar();
             conn.Close();
         }
-        void UaktualnijLiczbeKlientow()
+        private void UaktualnijLiczbeKlientow()
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
-            SqlCommand cmd;
             string zapytanie = "Select COUNT(*) From Klienci";
             cmd = new SqlCommand(zapytanie, conn);
             cmd.Parameters.Clear();
@@ -69,8 +65,7 @@ namespace System_Magazynowy
         }
 
 
-        public
-            Klient(string a, string b, string c, string d, int e, string f)
+        public Klient(string a, string b, string c, string d, int e, string f)
         {
             imie_klienta = a;
             nazwisko_klienta = b;

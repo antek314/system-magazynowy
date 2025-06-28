@@ -30,5 +30,12 @@ namespace System_Magazynowy
             // wylogowanie sie itp.
             Application.Exit();
         }
+
+        private void przejdz_do_strony_dostawcow_Click(object sender, EventArgs e)
+        {
+            Strona_Dostawcow klient = new Strona_Dostawcow();
+            klient.Show();
+            this.Hide();
+        }
     }
 }

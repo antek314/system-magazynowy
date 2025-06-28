@@ -3,16 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|c:\\users\\anton\\onedrive\\desktop\\informatics\\visual studio\\system_magazynowy\\strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|c:\\users\\anton\\onedrive\\desktop\\informatics\\visual studio\\system_magazynowy\\produkt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:produkt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|c:\\users\\anton\\onedrive\\desktop\\informatics\\visual studio\\system_magazynowy\\strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\dostawca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:dostawca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|c:\\users\\anton\\onedrive\\desktop\\informatics\\visual studio\\system_magazynowy\\klient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|c:\\users\\anton\\onedrive\\desktop\\informatics\\visual studio\\system_magazynowy\\strona_dostawcow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_dostawcow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_klientow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_klientow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_dostawcow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_dostawcow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_dodawania_dostawcy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_dodawania_dostawcy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_klientow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_klientow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_dodawania_dostawcy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_dodawania_dostawcy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\klient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:klient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_dodawania_klienta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_dodawania_klienta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_dodawania_dostawcy.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_dodawania_dostawcy.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_glowna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +62,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Klient.cs",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Klient.cs",
               "RelativeDocumentMoniker": "Klient.cs",
               "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Klient.cs",
               "RelativeToolTip": "Klient.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwFoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwEcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T09:26:20.72Z",
               "IsPinned": true,
@@ -44,7 +84,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Produkt.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Produkt.cs",
+              "RelativeDocumentMoniker": "Produkt.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Produkt.cs",
+              "RelativeToolTip": "Produkt.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAmwCEAAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T20:40:51.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Strona_Dostawcow.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dostawcow.cs",
+              "RelativeDocumentMoniker": "Strona_Dostawcow.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dostawcow.cs [Design]",
+              "RelativeToolTip": "Strona_Dostawcow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T10:28:56.855Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Strona_Klientow.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Klientow.cs",
+              "RelativeDocumentMoniker": "Strona_Klientow.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Klientow.cs",
+              "RelativeToolTip": "Strona_Klientow.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvzgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T10:32:48.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Strona_Dodawania_Dostawcy.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dodawania_Dostawcy.cs",
+              "RelativeDocumentMoniker": "Strona_Dodawania_Dostawcy.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dodawania_Dostawcy.cs",
+              "RelativeToolTip": "Strona_Dodawania_Dostawcy.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAlwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T11:53:04.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Strona_Glowna.cs [Design]",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Glowna.cs",
               "RelativeDocumentMoniker": "Strona_Glowna.cs",
@@ -56,13 +147,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Dostawca.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Dostawca.cs",
+              "RelativeDocumentMoniker": "Dostawca.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Dostawca.cs",
+              "RelativeToolTip": "Dostawca.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwFcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T08:35:39.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Strona_Dostawcow.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dostawcow.cs",
+              "RelativeDocumentMoniker": "Strona_Dostawcow.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dostawcow.cs",
+              "RelativeToolTip": "Strona_Dostawcow.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T10:30:10.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Strona_Klientow.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Klientow.cs",
+              "RelativeDocumentMoniker": "Strona_Klientow.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Klientow.cs [Design]",
+              "RelativeToolTip": "Strona_Klientow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T08:32:14.626Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Strona_Dodawania_Dostawcy.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dodawania_Dostawcy.cs",
+              "RelativeDocumentMoniker": "Strona_Dodawania_Dostawcy.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dodawania_Dostawcy.cs [Design]",
+              "RelativeToolTip": "Strona_Dodawania_Dostawcy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T10:34:25.417Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Strona_Dodawania_Klienta.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dodawania_Klienta.cs",
+              "RelativeDocumentMoniker": "Strona_Dodawania_Klienta.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dodawania_Klienta.cs",
+              "RelativeToolTip": "Strona_Dodawania_Klienta.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T12:00:13.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Strona_Dodawania_Dostawcy.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dodawania_Dostawcy.Designer.cs",
+              "RelativeDocumentMoniker": "Strona_Dodawania_Dostawcy.Designer.cs",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dodawania_Dostawcy.Designer.cs",
+              "RelativeToolTip": "Strona_Dodawania_Dostawcy.Designer.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAqwM4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T13:06:37.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Strona_Glowna.cs",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Glowna.cs",
               "RelativeDocumentMoniker": "Strona_Glowna.cs",
               "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Glowna.cs",
               "RelativeToolTip": "Strona_Glowna.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAwCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwCMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T15:32:19.702Z",
               "EditorCaption": ""

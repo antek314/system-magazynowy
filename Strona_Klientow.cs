@@ -28,7 +28,7 @@ namespace System_Magazynowy
                     using (DataTable dt = new DataTable())
                     {
                         sda.Fill(dt);
-                        tabela.DataSource = dt;
+                        tabela_klientow.DataSource = dt;
                     }
                 }
             }
@@ -55,6 +55,11 @@ namespace System_Magazynowy
         private void Strona_Klientow_Load(object sender, EventArgs e)
         {
             ZapelnijTabeleDanymi();
+        }
+
+        private void przycisk_usun_rekord_klienta_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

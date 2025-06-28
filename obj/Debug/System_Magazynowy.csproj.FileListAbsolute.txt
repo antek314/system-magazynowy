@@ -88,3 +88,5 @@ C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\obj\
 C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\bin\Debug\System_Magazynowy.exe.config
 C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\bin\Debug\System_Magazynowy.exe
 C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\bin\Debug\System_Magazynowy.pdb
+C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\obj\Debug\System_Magazynowy.Strona_Dodawania_Dostawcy.resources
+C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\obj\Debug\System_Magazynowy.Strona_Dostawcow.resources

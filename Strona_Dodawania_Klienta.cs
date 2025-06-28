@@ -45,5 +45,70 @@ namespace System_Magazynowy
             this.Close();
             MessageBox.Show("Dodano nowego klienta " + a + " " + b + ". Teraz w bazie jest " + klient.ZwrocLiczbeKlientow() + " klientow");
         }
+
+        private void prz2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dat1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dat2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void firmaTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void miejscowoscTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nazwiskoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imie_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tytul_dodaj_klienta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imieTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prz1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

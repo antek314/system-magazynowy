@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tytul_systemu = new System.Windows.Forms.Label();
             this.przejdz_do_strony_klientow = new System.Windows.Forms.Button();
             this.zamknij = new System.Windows.Forms.Button();
@@ -38,6 +38,8 @@
             this.a = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dodaj_nowy_produkt = new System.Windows.Forms.Button();
             this.tytul_klienci = new System.Windows.Forms.Label();
+            this.przejdz_do_strony_dostawcow = new System.Windows.Forms.Button();
+            this.przejdz_do_strony_zamowien = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tabela)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +48,7 @@
             this.tytul_systemu.AutoSize = true;
             this.tytul_systemu.Font = new System.Drawing.Font("Monotxt_IV25", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tytul_systemu.ForeColor = System.Drawing.Color.Peru;
-            this.tytul_systemu.Location = new System.Drawing.Point(12, 9);
+            this.tytul_systemu.Location = new System.Drawing.Point(66, 21);
             this.tytul_systemu.Name = "tytul_systemu";
             this.tytul_systemu.Size = new System.Drawing.Size(567, 53);
             this.tytul_systemu.TabIndex = 0;
@@ -61,9 +63,9 @@
             this.przejdz_do_strony_klientow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.przejdz_do_strony_klientow.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.przejdz_do_strony_klientow.ForeColor = System.Drawing.Color.Peru;
-            this.przejdz_do_strony_klientow.Location = new System.Drawing.Point(32, 117);
+            this.przejdz_do_strony_klientow.Location = new System.Drawing.Point(32, 97);
             this.przejdz_do_strony_klientow.Name = "przejdz_do_strony_klientow";
-            this.przejdz_do_strony_klientow.Size = new System.Drawing.Size(115, 90);
+            this.przejdz_do_strony_klientow.Size = new System.Drawing.Size(148, 97);
             this.przejdz_do_strony_klientow.TabIndex = 1;
             this.przejdz_do_strony_klientow.Text = "Klienci";
             this.przejdz_do_strony_klientow.UseVisualStyleBackColor = true;
@@ -102,34 +104,34 @@
             this.tabela.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabela.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.tabela.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.BlanchedAlmond;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Peru;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Sienna;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tabela.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.BlanchedAlmond;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Peru;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Sienna;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabela.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.tabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tabela.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.a});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.BlanchedAlmond;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tabela.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.BlanchedAlmond;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tabela.DefaultCellStyle = dataGridViewCellStyle4;
             this.tabela.EnableHeadersVisualStyles = false;
-            this.tabela.Location = new System.Drawing.Point(235, 148);
+            this.tabela.Location = new System.Drawing.Point(228, 97);
             this.tabela.Name = "tabela";
             this.tabela.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.tabela.RowHeadersVisible = false;
             this.tabela.RowHeadersWidth = 51;
             this.tabela.RowTemplate.Height = 24;
             this.tabela.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tabela.Size = new System.Drawing.Size(685, 218);
+            this.tabela.Size = new System.Drawing.Size(685, 282);
             this.tabela.TabIndex = 14;
             // 
             // a
@@ -164,10 +166,45 @@
             this.tytul_klienci.TabIndex = 12;
             this.tytul_klienci.Text = "Strona Klientów";
             // 
+            // przejdz_do_strony_dostawcow
+            // 
+            this.przejdz_do_strony_dostawcow.AllowDrop = true;
+            this.przejdz_do_strony_dostawcow.AutoEllipsis = true;
+            this.przejdz_do_strony_dostawcow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.przejdz_do_strony_dostawcow.BackColor = System.Drawing.Color.LavenderBlush;
+            this.przejdz_do_strony_dostawcow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.przejdz_do_strony_dostawcow.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.przejdz_do_strony_dostawcow.ForeColor = System.Drawing.Color.Peru;
+            this.przejdz_do_strony_dostawcow.Location = new System.Drawing.Point(32, 231);
+            this.przejdz_do_strony_dostawcow.Name = "przejdz_do_strony_dostawcow";
+            this.przejdz_do_strony_dostawcow.Size = new System.Drawing.Size(148, 99);
+            this.przejdz_do_strony_dostawcow.TabIndex = 16;
+            this.przejdz_do_strony_dostawcow.Text = "Dostawcy";
+            this.przejdz_do_strony_dostawcow.UseVisualStyleBackColor = true;
+            this.przejdz_do_strony_dostawcow.Click += new System.EventHandler(this.przejdz_do_strony_dostawcow_Click);
+            // 
+            // przejdz_do_strony_zamowien
+            // 
+            this.przejdz_do_strony_zamowien.AllowDrop = true;
+            this.przejdz_do_strony_zamowien.AutoEllipsis = true;
+            this.przejdz_do_strony_zamowien.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.przejdz_do_strony_zamowien.BackColor = System.Drawing.Color.LavenderBlush;
+            this.przejdz_do_strony_zamowien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.przejdz_do_strony_zamowien.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.przejdz_do_strony_zamowien.ForeColor = System.Drawing.Color.Peru;
+            this.przejdz_do_strony_zamowien.Location = new System.Drawing.Point(32, 370);
+            this.przejdz_do_strony_zamowien.Name = "przejdz_do_strony_zamowien";
+            this.przejdz_do_strony_zamowien.Size = new System.Drawing.Size(148, 103);
+            this.przejdz_do_strony_zamowien.TabIndex = 17;
+            this.przejdz_do_strony_zamowien.Text = "Zamówienia";
+            this.przejdz_do_strony_zamowien.UseVisualStyleBackColor = true;
+            // 
             // Strona_Glowna
             // 
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(966, 494);
+            this.Controls.Add(this.przejdz_do_strony_zamowien);
+            this.Controls.Add(this.przejdz_do_strony_dostawcow);
             this.Controls.Add(this.przycisk_usun_rekord_produktu);
             this.Controls.Add(this.tabela);
             this.Controls.Add(this.dodaj_nowy_produkt);
@@ -196,6 +233,8 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn a;
         private System.Windows.Forms.Button dodaj_nowy_produkt;
         private System.Windows.Forms.Label tytul_klienci;
+        private System.Windows.Forms.Button przejdz_do_strony_dostawcow;
+        private System.Windows.Forms.Button przejdz_do_strony_zamowien;
     }
 }
 
