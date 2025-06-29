@@ -35,13 +35,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tytul_dostawcy = new System.Windows.Forms.Label();
-            this.przycisk_usun_rekord_klienta = new System.Windows.Forms.Button();
+            this.przycisk_usun_rekord_dostawcy = new System.Windows.Forms.Button();
             this.dodaj_nowego_dostawce = new System.Windows.Forms.Button();
             this.cofnij_do_strony_glownej = new System.Windows.Forms.Button();
             this.tabela_dostawcow = new System.Windows.Forms.DataGridView();
-            this.dataBaseSystemDostawcy = new System_Magazynowy.DataBaseSystemDostawcy();
-            this.dostawcyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dostawcyTableAdapter = new System_Magazynowy.DataBaseSystemDostawcyTableAdapters.DostawcyTableAdapter();
             this.a = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.iddostawcyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,9 +49,12 @@
             this.datadodaniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataostatniejtransakcjiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.miejscowoscDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dostawcyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataBaseSystemDostawcy = new System_Magazynowy.DataBaseSystemDostawcy();
+            this.dostawcyTableAdapter = new System_Magazynowy.DataBaseSystemDostawcyTableAdapters.DostawcyTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tabela_dostawcow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDostawcy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dostawcyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDostawcy)).BeginInit();
             this.SuspendLayout();
             // 
             // tytul_dostawcy
@@ -68,18 +68,19 @@
             this.tytul_dostawcy.TabIndex = 4;
             this.tytul_dostawcy.Text = "Strona Dostawców";
             // 
-            // przycisk_usun_rekord_klienta
+            // przycisk_usun_rekord_dostawcy
             // 
-            this.przycisk_usun_rekord_klienta.BackColor = System.Drawing.Color.PapayaWhip;
-            this.przycisk_usun_rekord_klienta.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.przycisk_usun_rekord_klienta.ForeColor = System.Drawing.Color.Peru;
-            this.przycisk_usun_rekord_klienta.Location = new System.Drawing.Point(543, 631);
-            this.przycisk_usun_rekord_klienta.Name = "przycisk_usun_rekord_klienta";
-            this.przycisk_usun_rekord_klienta.Size = new System.Drawing.Size(234, 35);
-            this.przycisk_usun_rekord_klienta.TabIndex = 13;
-            this.przycisk_usun_rekord_klienta.Text = "usuń";
-            this.przycisk_usun_rekord_klienta.UseCompatibleTextRendering = true;
-            this.przycisk_usun_rekord_klienta.UseVisualStyleBackColor = false;
+            this.przycisk_usun_rekord_dostawcy.BackColor = System.Drawing.Color.PapayaWhip;
+            this.przycisk_usun_rekord_dostawcy.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.przycisk_usun_rekord_dostawcy.ForeColor = System.Drawing.Color.Peru;
+            this.przycisk_usun_rekord_dostawcy.Location = new System.Drawing.Point(543, 631);
+            this.przycisk_usun_rekord_dostawcy.Name = "przycisk_usun_rekord_dostawcy";
+            this.przycisk_usun_rekord_dostawcy.Size = new System.Drawing.Size(234, 35);
+            this.przycisk_usun_rekord_dostawcy.TabIndex = 13;
+            this.przycisk_usun_rekord_dostawcy.Text = "usuń";
+            this.przycisk_usun_rekord_dostawcy.UseCompatibleTextRendering = true;
+            this.przycisk_usun_rekord_dostawcy.UseVisualStyleBackColor = false;
+            this.przycisk_usun_rekord_dostawcy.Click += new System.EventHandler(this.przycisk_usun_rekord_klienta_Click);
             // 
             // dodaj_nowego_dostawce
             // 
@@ -111,6 +112,7 @@
             // 
             // tabela_dostawcow
             // 
+            this.tabela_dostawcow.AllowUserToAddRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.tabela_dostawcow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.tabela_dostawcow.AutoGenerateColumns = false;
@@ -168,20 +170,6 @@
             this.tabela_dostawcow.Size = new System.Drawing.Size(1342, 464);
             this.tabela_dostawcow.TabIndex = 14;
             // 
-            // dataBaseSystemDostawcy
-            // 
-            this.dataBaseSystemDostawcy.DataSetName = "DataBaseSystemDostawcy";
-            this.dataBaseSystemDostawcy.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dostawcyBindingSource
-            // 
-            this.dostawcyBindingSource.DataMember = "Dostawcy";
-            this.dostawcyBindingSource.DataSource = this.dataBaseSystemDostawcy;
-            // 
-            // dostawcyTableAdapter
-            // 
-            this.dostawcyTableAdapter.ClearBeforeFill = true;
-            // 
             // a
             // 
             this.a.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -205,6 +193,7 @@
             this.imieDataGridViewTextBoxColumn.HeaderText = "imie";
             this.imieDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.imieDataGridViewTextBoxColumn.Name = "imieDataGridViewTextBoxColumn";
+            this.imieDataGridViewTextBoxColumn.Width = 125;
             // 
             // nazwiskoDataGridViewTextBoxColumn
             // 
@@ -262,6 +251,20 @@
             this.miejscowoscDataGridViewTextBoxColumn.Name = "miejscowoscDataGridViewTextBoxColumn";
             this.miejscowoscDataGridViewTextBoxColumn.Width = 180;
             // 
+            // dostawcyBindingSource
+            // 
+            this.dostawcyBindingSource.DataMember = "Dostawcy";
+            this.dostawcyBindingSource.DataSource = this.dataBaseSystemDostawcy;
+            // 
+            // dataBaseSystemDostawcy
+            // 
+            this.dataBaseSystemDostawcy.DataSetName = "DataBaseSystemDostawcy";
+            this.dataBaseSystemDostawcy.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dostawcyTableAdapter
+            // 
+            this.dostawcyTableAdapter.ClearBeforeFill = true;
+            // 
             // Strona_Dostawcow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -269,7 +272,7 @@
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(1403, 714);
             this.Controls.Add(this.tabela_dostawcow);
-            this.Controls.Add(this.przycisk_usun_rekord_klienta);
+            this.Controls.Add(this.przycisk_usun_rekord_dostawcy);
             this.Controls.Add(this.dodaj_nowego_dostawce);
             this.Controls.Add(this.cofnij_do_strony_glownej);
             this.Controls.Add(this.tytul_dostawcy);
@@ -277,8 +280,8 @@
             this.Text = "StronaDostawcow";
             this.Load += new System.EventHandler(this.Strona_Dostawcow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabela_dostawcow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDostawcy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dostawcyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDostawcy)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,7 +290,7 @@
         #endregion
 
         private System.Windows.Forms.Label tytul_dostawcy;
-        private System.Windows.Forms.Button przycisk_usun_rekord_klienta;
+        private System.Windows.Forms.Button przycisk_usun_rekord_dostawcy;
         private System.Windows.Forms.Button dodaj_nowego_dostawce;
         private System.Windows.Forms.Button cofnij_do_strony_glownej;
         private System.Windows.Forms.DataGridView tabela_dostawcow;

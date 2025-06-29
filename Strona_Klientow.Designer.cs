@@ -109,6 +109,7 @@ namespace System_Magazynowy
             // 
             // tabela_klientow
             // 
+            this.tabela_klientow.AllowUserToAddRows = false;
             this.tabela_klientow.AutoGenerateColumns = false;
             this.tabela_klientow.BackgroundColor = System.Drawing.Color.BlanchedAlmond;
             this.tabela_klientow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;

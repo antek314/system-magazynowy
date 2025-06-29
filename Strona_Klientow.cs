@@ -18,22 +18,6 @@ namespace System_Magazynowy
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
         SqlCommand cmd;
 
-        void ZapelnijTabeleDanymi()
-        {
-            string sql = "SELECT * FROM Klienci";
-            using (conn)
-            {
-                using (SqlDataAdapter sda = new SqlDataAdapter(sql, conn))
-                {
-                    using (DataTable dt = new DataTable())
-                    {
-                        sda.Fill(dt);
-                        tabela_klientow.DataSource = dt;
-                    }
-                }
-            }
-
-        }
         public Strona_Klientow()
         {
             InitializeComponent();
@@ -54,12 +38,18 @@ namespace System_Magazynowy
 
         private void Strona_Klientow_Load(object sender, EventArgs e)
         {
-            ZapelnijTabeleDanymi();
+            string zapytanie = "SELECT * FROM Klienci";
+
+            System_Zachowan_Stron zaladuj_tabele = new System_Zachowan_Stron();
+            zaladuj_tabele.ZapelnijTabeleDanymi(ref tabela_klientow, zapytanie);
         }
 
         private void przycisk_usun_rekord_klienta_Click(object sender, EventArgs e)
         {
+            string zapytanie = "Delete From Klienci Where id_klienta = @indeks";
 
+            System_Zachowan_Stron usuwanie = new System_Zachowan_Stron();
+            usuwanie.Usun_Z_Tabeli(ref tabela_klientow, zapytanie);
         }
     }
 }

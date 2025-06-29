@@ -73,14 +73,19 @@ namespace System_Magazynowy
         {
             imie_dostawcy = a;
             nazwisko_dostawcy = b;
-            firma_dostawcy = c;
-            miejscowosc_dostawcy = d;
+            miejscowosc_dostawcy = c;
+            firma_dostawcy = d;
+
             koszty = e;
             liczba_transakcji = f;
             data_dodania_dostawcy = g;
             DodajDoBazyDanych();
             DopiszNumerId();
             UaktualnijLiczbeDostawcow();
+        }
+        public Dostawca(string a)
+        {
+            firma_dostawcy = a;
         }
         public int ZwrocLiczbeDostawcow()
         {

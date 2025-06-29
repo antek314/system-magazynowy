@@ -11,7 +11,9 @@ namespace System_Magazynowy
     {
         private int id_produktu = 0;
         private string nazwa;
+
         private string dostawca;
+        private Dostawca dostawca_;
         private string kod;
         private float cena;
         private int liczba;
@@ -51,7 +53,6 @@ namespace System_Magazynowy
             cmd.Parameters.AddWithValue("data_dodania", data_dodania);
 
             conn.Open();
-
             cmd.ExecuteNonQuery();
             conn.Close();
         }
@@ -68,8 +69,6 @@ namespace System_Magazynowy
         }
         private void UaktualnijLiczbeDostawcow()
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
-            SqlCommand cmd;
             string zapytanie = "Select COUNT(*) From Produkty";
             cmd = new SqlCommand(zapytanie, conn);
             cmd.Parameters.Clear();
@@ -78,9 +77,9 @@ namespace System_Magazynowy
             conn.Close();
         }
 
-
         public Produkt(string a, string b, int c, float d, float e, string f, string g, float h, string i, string j)
         {
+            dostawca_= new Dostawca(b);
             nazwa = a;
             dostawca = b;
             liczba = c;
@@ -92,7 +91,6 @@ namespace System_Magazynowy
             waga = h;
             wymiary = i;
             data_dodania = j;
-
 
             DodajDoBazyDanych();
             DopiszNumerId();
