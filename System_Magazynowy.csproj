@@ -177,23 +177,15 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataBaseSystemDataSet.cs">
-      <DependentUpon>DataBaseSystemDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataBaseSystemDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataBaseSystemDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataBaseSystemDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataBaseSystemDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DataBaseSystemDostawcy.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBaseSystemDostawcy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseSystemKlienci.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBaseSystemKlienci.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataBaseSystemProdukty.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -269,28 +261,6 @@
     <EmbeddedResource Include="Strona_Klientow.resx">
       <DependentUpon>Strona_Klientow.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataBaseSystemDataSet.xsc">
-      <DependentUpon>DataBaseSystemDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataBaseSystemDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataBaseSystemDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataBaseSystemDataSet.xss">
-      <DependentUpon>DataBaseSystemDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataBaseSystemDataSet1.xsc">
-      <DependentUpon>DataBaseSystemDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataBaseSystemDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataBaseSystemDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataBaseSystemDataSet1.xss">
-      <DependentUpon>DataBaseSystemDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="DataBaseSystemDostawcy.xsc">
       <DependentUpon>DataBaseSystemDostawcy.xsd</DependentUpon>
     </None>
@@ -301,6 +271,17 @@
     </None>
     <None Include="DataBaseSystemDostawcy.xss">
       <DependentUpon>DataBaseSystemDostawcy.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseSystemKlienci.xsc">
+      <DependentUpon>DataBaseSystemKlienci.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseSystemKlienci.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaseSystemKlienci.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBaseSystemKlienci.xss">
+      <DependentUpon>DataBaseSystemKlienci.xsd</DependentUpon>
     </None>
     <None Include="DataBaseSystemProdukty.xsc">
       <DependentUpon>DataBaseSystemProdukty.xsd</DependentUpon>
