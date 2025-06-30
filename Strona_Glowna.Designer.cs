@@ -43,9 +43,6 @@
             this.przejdz_do_strony_dostawcow = new System.Windows.Forms.Button();
             this.przejdz_do_strony_zamowien = new System.Windows.Forms.Button();
             this.tabela_produktow = new System.Windows.Forms.DataGridView();
-            this.dataBaseSystemProdukty = new System_Magazynowy.DataBaseSystemProdukty();
-            this.produktyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.produktyTableAdapter = new System_Magazynowy.DataBaseSystemProduktyTableAdapters.ProduktyTableAdapter();
             this.a = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idproduktuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazwaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,9 +55,12 @@
             this.wartoscDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produktyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataBaseSystemProdukty = new System_Magazynowy.DataBaseSystemProdukty();
+            this.produktyTableAdapter = new System_Magazynowy.DataBaseSystemProduktyTableAdapters.ProduktyTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tabela_produktow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemProdukty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produktyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemProdukty)).BeginInit();
             this.SuspendLayout();
             // 
             // tytul_systemu
@@ -238,20 +238,8 @@
             this.tabela_produktow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tabela_produktow.Size = new System.Drawing.Size(1163, 552);
             this.tabela_produktow.TabIndex = 18;
-            // 
-            // dataBaseSystemProdukty
-            // 
-            this.dataBaseSystemProdukty.DataSetName = "DataBaseSystemProdukty";
-            this.dataBaseSystemProdukty.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // produktyBindingSource
-            // 
-            this.produktyBindingSource.DataMember = "Produkty";
-            this.produktyBindingSource.DataSource = this.dataBaseSystemProdukty;
-            // 
-            // produktyTableAdapter
-            // 
-            this.produktyTableAdapter.ClearBeforeFill = true;
+            this.tabela_produktow.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Kliknieto);
+            this.tabela_produktow.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Tu);
             // 
             // a
             // 
@@ -350,10 +338,24 @@
             this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
             this.dataDataGridViewTextBoxColumn.Width = 125;
             // 
+            // produktyBindingSource
+            // 
+            this.produktyBindingSource.DataMember = "Produkty";
+            this.produktyBindingSource.DataSource = this.dataBaseSystemProdukty;
+            // 
+            // dataBaseSystemProdukty
+            // 
+            this.dataBaseSystemProdukty.DataSetName = "DataBaseSystemProdukty";
+            this.dataBaseSystemProdukty.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // produktyTableAdapter
+            // 
+            this.produktyTableAdapter.ClearBeforeFill = true;
+            // 
             // Strona_Glowna
             // 
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(1399, 778);
+            this.ClientSize = new System.Drawing.Size(1400, 789);
             this.Controls.Add(this.tabela_produktow);
             this.Controls.Add(this.przejdz_do_strony_zamowien);
             this.Controls.Add(this.przejdz_do_strony_dostawcow);
@@ -367,11 +369,12 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;
+            this.Location = new System.Drawing.Point(100, 100);
             this.Name = "Strona_Glowna";
             this.Load += new System.EventHandler(this.Strona_Glowna_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabela_produktow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemProdukty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produktyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemProdukty)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

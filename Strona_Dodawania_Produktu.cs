@@ -23,7 +23,6 @@ namespace System_Magazynowy
         {
             // TODO: This line of code loads data into the 'dataBaseSystemDostawcy.Dostawcy' table. You can move, or remove it, as needed.
             this.dostawcyTableAdapter.Fill(this.dataBaseSystemDostawcy.Dostawcy);
-
         }
 
         private void zamknij_dodawanie_dostawcy_Click(object sender, EventArgs e)
@@ -50,6 +49,8 @@ namespace System_Magazynowy
             string c = Int32.Parse(wpisz_liczbe.Text).ToString();
             this.Close();
             MessageBox.Show("Dostawca " + a + " dostarczył produkt " + b + ". Teraz w bazie jest " + c + " sztuk " + nazwaTextBox + ".");
+            System_Zachowan_Stron odswiezanie = new System_Zachowan_Stron();
+            odswiezanie.OswiezDaneWTabeli(ref tabela, zapytanie);
         }
     }
 }

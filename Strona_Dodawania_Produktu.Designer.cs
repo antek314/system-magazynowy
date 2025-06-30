@@ -1,4 +1,6 @@
-﻿namespace System_Magazynowy
+﻿using System.Windows.Forms;
+
+namespace System_Magazynowy
 {
     partial class Strona_Dodawania_Produktu
     {
@@ -18,6 +20,11 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+        }
+        public void PrzekazReferencjeTabeli( ref DataGridView t, string pytanie) 
+        {
+            tabela = t;
+            zapytanie = pytanie;
         }
 
         #region Windows Form Designer generated code
@@ -41,9 +48,6 @@
             this.dodaj_dostawce = new System.Windows.Forms.Button();
             this.zamknij_dodawanie_dostawcy = new System.Windows.Forms.Button();
             this.wybierz_dostawce = new System.Windows.Forms.ComboBox();
-            this.dostawcyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataBaseSystemDostawcy = new System_Magazynowy.DataBaseSystemDostawcy();
-            this.dostawcyTableAdapter = new System_Magazynowy.DataBaseSystemDostawcyTableAdapters.DostawcyTableAdapter();
             this.wpisz_liczbe = new System.Windows.Forms.TextBox();
             this.wpisz_cene = new System.Windows.Forms.TextBox();
             this.wpisz_cene_hurtowa = new System.Windows.Forms.TextBox();
@@ -58,8 +62,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.wpisz_pulke = new System.Windows.Forms.TextBox();
             this.pulka_label = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dostawcyBindingSource)).BeginInit();
+            this.dataBaseSystemDostawcy = new System_Magazynowy.DataBaseSystemDostawcy();
+            this.dostawcyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dostawcyTableAdapter = new System_Magazynowy.DataBaseSystemDostawcyTableAdapters.DostawcyTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDostawcy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dostawcyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dat1
@@ -199,20 +206,6 @@
             this.wybierz_dostawce.Size = new System.Drawing.Size(195, 32);
             this.wybierz_dostawce.TabIndex = 61;
             // 
-            // dostawcyBindingSource
-            // 
-            this.dostawcyBindingSource.DataMember = "Dostawcy";
-            this.dostawcyBindingSource.DataSource = this.dataBaseSystemDostawcy;
-            // 
-            // dataBaseSystemDostawcy
-            // 
-            this.dataBaseSystemDostawcy.DataSetName = "DataBaseSystemDostawcy";
-            this.dataBaseSystemDostawcy.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dostawcyTableAdapter
-            // 
-            this.dostawcyTableAdapter.ClearBeforeFill = true;
-            // 
             // wpisz_liczbe
             // 
             this.wpisz_liczbe.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -274,12 +267,15 @@
             // 
             // wpisz_kod
             // 
+            this.wpisz_kod.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.wpisz_kod.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wpisz_kod.ImeMode = System.Windows.Forms.ImeMode.On;
             this.wpisz_kod.Location = new System.Drawing.Point(716, 363);
             this.wpisz_kod.Name = "wpisz_kod";
             this.wpisz_kod.Size = new System.Drawing.Size(168, 32);
-            this.wpisz_kod.TabIndex = 67;
+            this.wpisz_kod.TabIndex = 9;
             this.wpisz_kod.Text = "0000 0000";
+            this.wpisz_kod.UseWaitCursor = true;
             // 
             // wpisz_wymiary
             // 
@@ -350,12 +346,26 @@
             this.pulka_label.TabIndex = 74;
             this.pulka_label.Text = "pulka";
             // 
+            // dataBaseSystemDostawcy
+            // 
+            this.dataBaseSystemDostawcy.DataSetName = "DataBaseSystemDostawcy";
+            this.dataBaseSystemDostawcy.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dostawcyBindingSource
+            // 
+            this.dostawcyBindingSource.DataMember = "Dostawcy";
+            this.dostawcyBindingSource.DataSource = this.dataBaseSystemDostawcy;
+            // 
+            // dostawcyTableAdapter
+            // 
+            this.dostawcyTableAdapter.ClearBeforeFill = true;
+            // 
             // Strona_Dodawania_Produktu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
-            this.ClientSize = new System.Drawing.Size(927, 548);
+            this.ClientSize = new System.Drawing.Size(927, 536);
             this.Controls.Add(this.wpisz_pulke);
             this.Controls.Add(this.pulka_label);
             this.Controls.Add(this.label8);
@@ -385,8 +395,8 @@
             this.Name = "Strona_Dodawania_Produktu";
             this.Text = "Strona_Dodawania_Produktu";
             this.Load += new System.EventHandler(this.Strona_Dodawania_Produktu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dostawcyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDostawcy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dostawcyBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,9 +415,6 @@
         private System.Windows.Forms.Button dodaj_dostawce;
         private System.Windows.Forms.Button zamknij_dodawanie_dostawcy;
         private System.Windows.Forms.ComboBox wybierz_dostawce;
-        private DataBaseSystemDostawcy dataBaseSystemDostawcy;
-        private System.Windows.Forms.BindingSource dostawcyBindingSource;
-        private DataBaseSystemDostawcyTableAdapters.DostawcyTableAdapter dostawcyTableAdapter;
         private System.Windows.Forms.TextBox wpisz_liczbe;
         private System.Windows.Forms.TextBox wpisz_cene;
         private System.Windows.Forms.TextBox wpisz_cene_hurtowa;
@@ -422,5 +429,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox wpisz_pulke;
         private System.Windows.Forms.Label pulka_label;
+        private DataBaseSystemDostawcy dataBaseSystemDostawcy;
+        private System.Windows.Forms.BindingSource dostawcyBindingSource;
+        private DataBaseSystemDostawcyTableAdapters.DostawcyTableAdapter dostawcyTableAdapter;
+
+
+        private DataGridView tabela;
+        private string zapytanie;
     }
 }

@@ -234,6 +234,12 @@
       <DependentUpon>Strona_Klientow.cs</DependentUpon>
     </Compile>
     <Compile Include="System_Zachowan_Stron.cs" />
+    <Compile Include="Szczegoly_Produktu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Szczegoly_Produktu.Designer.cs">
+      <DependentUpon>Szczegoly_Produktu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Strona_Dodawania_Produktu.resx">
       <DependentUpon>Strona_Dodawania_Produktu.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +266,9 @@
     </Compile>
     <EmbeddedResource Include="Strona_Klientow.resx">
       <DependentUpon>Strona_Klientow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Szczegoly_Produktu.resx">
+      <DependentUpon>Szczegoly_Produktu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataBaseSystemDostawcy.xsc">
       <DependentUpon>DataBaseSystemDostawcy.xsd</DependentUpon>

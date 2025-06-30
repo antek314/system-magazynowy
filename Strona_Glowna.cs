@@ -13,6 +13,8 @@ namespace System_Magazynowy
 {
     public partial class Strona_Glowna : Form
     {
+        private string zapytanie = "SELECT * FROM Produkty";
+
         public Strona_Glowna()
         {
             InitializeComponent();
@@ -41,10 +43,6 @@ namespace System_Magazynowy
 
         private void Strona_Glowna_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataBaseSystemProdukty.Produkty' table. You can move, or remove it, as needed.
-            this.produktyTableAdapter.Fill(this.dataBaseSystemProdukty.Produkty);
-            string zapytanie = "SELECT * FROM Produkty";
-
             System_Zachowan_Stron zaladuj_tabele = new System_Zachowan_Stron();
             zaladuj_tabele.ZapelnijTabeleDanymi(ref tabela_produktow, zapytanie);
         }
@@ -52,15 +50,30 @@ namespace System_Magazynowy
         private void dodaj_nowy_produkt_Click(object sender, EventArgs e)
         {
             Strona_Dodawania_Produktu dodaj = new Strona_Dodawania_Produktu();
+            dodaj.PrzekazReferencjeTabeli(ref tabela_produktow, zapytanie);
             dodaj.Show();
         }
 
         private void przycisk_usun_rekord_produktu_Click(object sender, EventArgs e)
         {
-            string zapytanie = "Delete From Produkty Where id_produktu = @indeks";
+            string usun = "Delete From Produkty Where id_produktu = @indeks";
 
             System_Zachowan_Stron usuwanie = new System_Zachowan_Stron();
-            usuwanie.Usun_Z_Tabeli(ref tabela_produktow, zapytanie);
+            usuwanie.Usun_Z_Tabeli(ref tabela_produktow, usun);
+        }
+
+        private void Tu(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            
+        }
+
+        private void Kliknieto(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = int.Parse(e.RowIndex.ToString());
+            int id = int.Parse(this.tabela_produktow.Rows[index].Cells[1].Value.ToString());
+            Szczegoly_Produktu dodaj = new Szczegoly_Produktu();
+            dodaj.PrzekazId(id);
+            dodaj.Show();
         }
     }
 }

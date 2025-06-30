@@ -103,58 +103,67 @@ SELECT Id_dostawcy, imie, nazwisko, firma, koszty, liczba_transakcji, data_dodan
               <Mapping SourceColumn="data_ostatniej_transakcji" DataSetColumn="data_ostatniej_transakcji" />
               <Mapping SourceColumn="miejscowosc" DataSetColumn="miejscowosc" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="DataBaseSystemConnectionString (Settings)" DbObjectName="dbo.Dostawcy" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id_dostawcy, imie, nazwisko, firma, koszty, liczba_transakcji, data_dodania, data_ostatniej_transakcji, miejscowosc FROM dbo.Dostawcy</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DataBaseSystemDostawcy" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataBaseSystemDostawcy" msprop:Generator_DataSetName="DataBaseSystemDostawcy">
+  <xs:element name="DataBaseSystemDostawcy" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataBaseSystemDostawcy" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataBaseSystemDostawcy">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Dostawcy" msprop:Generator_RowEvHandlerName="DostawcyRowChangeEventHandler" msprop:Generator_RowDeletedName="DostawcyRowDeleted" msprop:Generator_RowDeletingName="DostawcyRowDeleting" msprop:Generator_RowEvArgName="DostawcyRowChangeEvent" msprop:Generator_TablePropName="Dostawcy" msprop:Generator_RowChangedName="DostawcyRowChanged" msprop:Generator_RowChangingName="DostawcyRowChanging" msprop:Generator_TableClassName="DostawcyDataTable" msprop:Generator_RowClassName="DostawcyRow" msprop:Generator_TableVarName="tableDostawcy" msprop:Generator_UserTableName="Dostawcy">
+        <xs:element name="Dostawcy" msprop:Generator_RowClassName="DostawcyRow" msprop:Generator_RowEvHandlerName="DostawcyRowChangeEventHandler" msprop:Generator_RowDeletedName="DostawcyRowDeleted" msprop:Generator_RowDeletingName="DostawcyRowDeleting" msprop:Generator_RowEvArgName="DostawcyRowChangeEvent" msprop:Generator_TablePropName="Dostawcy" msprop:Generator_RowChangedName="DostawcyRowChanged" msprop:Generator_UserTableName="Dostawcy" msprop:Generator_RowChangingName="DostawcyRowChanging" msprop:Generator_TableClassName="DostawcyDataTable" msprop:Generator_TableVarName="tableDostawcy">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Id_dostawcy" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Id_dostawcy" msprop:Generator_ColumnPropNameInTable="Id_dostawcyColumn" msprop:Generator_ColumnVarNameInTable="columnId_dostawcy" msprop:Generator_UserColumnName="Id_dostawcy" type="xs:int" />
-              <xs:element name="imie" msprop:Generator_ColumnPropNameInRow="imie" msprop:Generator_ColumnPropNameInTable="imieColumn" msprop:Generator_ColumnVarNameInTable="columnimie" msprop:Generator_UserColumnName="imie" minOccurs="0">
+              <xs:element name="Id_dostawcy" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Id_dostawcy" msprop:Generator_ColumnPropNameInTable="Id_dostawcyColumn" msprop:Generator_ColumnPropNameInRow="Id_dostawcy" msprop:Generator_ColumnVarNameInTable="columnId_dostawcy" type="xs:int" />
+              <xs:element name="imie" msprop:Generator_UserColumnName="imie" msprop:Generator_ColumnPropNameInTable="imieColumn" msprop:Generator_ColumnPropNameInRow="imie" msprop:Generator_ColumnVarNameInTable="columnimie" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="nazwisko" msprop:Generator_ColumnPropNameInRow="nazwisko" msprop:Generator_ColumnPropNameInTable="nazwiskoColumn" msprop:Generator_ColumnVarNameInTable="columnnazwisko" msprop:Generator_UserColumnName="nazwisko" minOccurs="0">
+              <xs:element name="nazwisko" msprop:Generator_UserColumnName="nazwisko" msprop:Generator_ColumnPropNameInTable="nazwiskoColumn" msprop:Generator_ColumnPropNameInRow="nazwisko" msprop:Generator_ColumnVarNameInTable="columnnazwisko" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="firma" msprop:Generator_ColumnPropNameInRow="firma" msprop:Generator_ColumnPropNameInTable="firmaColumn" msprop:Generator_ColumnVarNameInTable="columnfirma" msprop:Generator_UserColumnName="firma" minOccurs="0">
+              <xs:element name="firma" msprop:Generator_UserColumnName="firma" msprop:Generator_ColumnPropNameInTable="firmaColumn" msprop:Generator_ColumnPropNameInRow="firma" msprop:Generator_ColumnVarNameInTable="columnfirma" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="koszty" msprop:Generator_ColumnPropNameInRow="koszty" msprop:Generator_ColumnPropNameInTable="kosztyColumn" msprop:Generator_ColumnVarNameInTable="columnkoszty" msprop:Generator_UserColumnName="koszty" type="xs:decimal" minOccurs="0" />
-              <xs:element name="liczba_transakcji" msprop:Generator_ColumnPropNameInRow="liczba_transakcji" msprop:Generator_ColumnPropNameInTable="liczba_transakcjiColumn" msprop:Generator_ColumnVarNameInTable="columnliczba_transakcji" msprop:Generator_UserColumnName="liczba_transakcji" type="xs:int" minOccurs="0" />
-              <xs:element name="data_dodania" msprop:Generator_ColumnPropNameInRow="data_dodania" msprop:Generator_ColumnPropNameInTable="data_dodaniaColumn" msprop:Generator_ColumnVarNameInTable="columndata_dodania" msprop:Generator_UserColumnName="data_dodania" minOccurs="0">
+              <xs:element name="koszty" msprop:Generator_UserColumnName="koszty" msprop:Generator_ColumnPropNameInTable="kosztyColumn" msprop:Generator_ColumnPropNameInRow="koszty" msprop:Generator_ColumnVarNameInTable="columnkoszty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="liczba_transakcji" msprop:Generator_UserColumnName="liczba_transakcji" msprop:Generator_ColumnPropNameInTable="liczba_transakcjiColumn" msprop:Generator_ColumnPropNameInRow="liczba_transakcji" msprop:Generator_ColumnVarNameInTable="columnliczba_transakcji" type="xs:int" minOccurs="0" />
+              <xs:element name="data_dodania" msprop:Generator_UserColumnName="data_dodania" msprop:Generator_ColumnPropNameInTable="data_dodaniaColumn" msprop:Generator_ColumnPropNameInRow="data_dodania" msprop:Generator_ColumnVarNameInTable="columndata_dodania" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="data_ostatniej_transakcji" msprop:Generator_ColumnPropNameInRow="data_ostatniej_transakcji" msprop:Generator_ColumnPropNameInTable="data_ostatniej_transakcjiColumn" msprop:Generator_ColumnVarNameInTable="columndata_ostatniej_transakcji" msprop:Generator_UserColumnName="data_ostatniej_transakcji" minOccurs="0">
+              <xs:element name="data_ostatniej_transakcji" msprop:Generator_UserColumnName="data_ostatniej_transakcji" msprop:Generator_ColumnPropNameInTable="data_ostatniej_transakcjiColumn" msprop:Generator_ColumnPropNameInRow="data_ostatniej_transakcji" msprop:Generator_ColumnVarNameInTable="columndata_ostatniej_transakcji" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="miejscowosc" msprop:Generator_ColumnPropNameInRow="miejscowosc" msprop:Generator_ColumnPropNameInTable="miejscowoscColumn" msprop:Generator_ColumnVarNameInTable="columnmiejscowosc" msprop:Generator_UserColumnName="miejscowosc" minOccurs="0">
+              <xs:element name="miejscowosc" msprop:Generator_UserColumnName="miejscowosc" msprop:Generator_ColumnPropNameInTable="miejscowoscColumn" msprop:Generator_ColumnPropNameInRow="miejscowosc" msprop:Generator_ColumnVarNameInTable="columnmiejscowosc" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />

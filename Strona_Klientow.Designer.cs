@@ -31,16 +31,12 @@ namespace System_Magazynowy
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cofnij_do_strony_glownej = new System.Windows.Forms.Button();
             this.tytul_klienci = new System.Windows.Forms.Label();
             this.dodaj_nowego_klienta = new System.Windows.Forms.Button();
             this.tabela_klientow = new System.Windows.Forms.DataGridView();
-            this.przycisk_usun_rekord_klienta = new System.Windows.Forms.Button();
-            this.dataBaseSystemKlienci = new System_Magazynowy.DataBaseSystemKlienci();
-            this.klienciBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.klienciTableAdapter = new System_Magazynowy.DataBaseSystemKlienciTableAdapters.KlienciTableAdapter();
             this.a = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idklientaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,9 +45,13 @@ namespace System_Magazynowy
             this.firmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dochodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.klienciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataBaseSystemKlienci = new System_Magazynowy.DataBaseSystemKlienci();
+            this.przycisk_usun_rekord_klienta = new System.Windows.Forms.Button();
+            this.klienciTableAdapter = new System_Magazynowy.DataBaseSystemKlienciTableAdapters.KlienciTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tabela_klientow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemKlienci)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klienciBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemKlienci)).BeginInit();
             this.SuspendLayout();
             // 
             // cofnij_do_strony_glownej
@@ -101,14 +101,14 @@ namespace System_Magazynowy
             this.tabela_klientow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabela_klientow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.tabela_klientow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.BlanchedAlmond;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Peru;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SandyBrown;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Sienna;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tabela_klientow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.BlanchedAlmond;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Peru;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SandyBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Sienna;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabela_klientow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.tabela_klientow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tabela_klientow.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.a,
@@ -120,14 +120,14 @@ namespace System_Magazynowy
             this.dataDataGridViewTextBoxColumn,
             this.dochodDataGridViewTextBoxColumn});
             this.tabela_klientow.DataSource = this.klienciBindingSource;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.BlanchedAlmond;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tabela_klientow.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.BlanchedAlmond;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tabela_klientow.DefaultCellStyle = dataGridViewCellStyle2;
             this.tabela_klientow.EnableHeadersVisualStyles = false;
             this.tabela_klientow.Location = new System.Drawing.Point(12, 99);
             this.tabela_klientow.Name = "tabela_klientow";
@@ -136,36 +136,8 @@ namespace System_Magazynowy
             this.tabela_klientow.RowHeadersWidth = 51;
             this.tabela_klientow.RowTemplate.Height = 24;
             this.tabela_klientow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tabela_klientow.Size = new System.Drawing.Size(1104, 374);
+            this.tabela_klientow.Size = new System.Drawing.Size(1248, 390);
             this.tabela_klientow.TabIndex = 9;
-            // 
-            // przycisk_usun_rekord_klienta
-            // 
-            this.przycisk_usun_rekord_klienta.BackColor = System.Drawing.Color.PapayaWhip;
-            this.przycisk_usun_rekord_klienta.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.przycisk_usun_rekord_klienta.ForeColor = System.Drawing.Color.Peru;
-            this.przycisk_usun_rekord_klienta.Location = new System.Drawing.Point(537, 508);
-            this.przycisk_usun_rekord_klienta.Name = "przycisk_usun_rekord_klienta";
-            this.przycisk_usun_rekord_klienta.Size = new System.Drawing.Size(234, 35);
-            this.przycisk_usun_rekord_klienta.TabIndex = 10;
-            this.przycisk_usun_rekord_klienta.Text = "usuń";
-            this.przycisk_usun_rekord_klienta.UseCompatibleTextRendering = true;
-            this.przycisk_usun_rekord_klienta.UseVisualStyleBackColor = false;
-            this.przycisk_usun_rekord_klienta.Click += new System.EventHandler(this.przycisk_usun_rekord_klienta_Click);
-            // 
-            // dataBaseSystemKlienci
-            // 
-            this.dataBaseSystemKlienci.DataSetName = "DataBaseSystemKlienci";
-            this.dataBaseSystemKlienci.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // klienciBindingSource
-            // 
-            this.klienciBindingSource.DataMember = "Klienci";
-            this.klienciBindingSource.DataSource = this.dataBaseSystemKlienci;
-            // 
-            // klienciTableAdapter
-            // 
-            this.klienciTableAdapter.ClearBeforeFill = true;
             // 
             // a
             // 
@@ -232,12 +204,40 @@ namespace System_Magazynowy
             this.dochodDataGridViewTextBoxColumn.Name = "dochodDataGridViewTextBoxColumn";
             this.dochodDataGridViewTextBoxColumn.Width = 125;
             // 
+            // klienciBindingSource
+            // 
+            this.klienciBindingSource.DataMember = "Klienci";
+            this.klienciBindingSource.DataSource = this.dataBaseSystemKlienci;
+            // 
+            // dataBaseSystemKlienci
+            // 
+            this.dataBaseSystemKlienci.DataSetName = "DataBaseSystemKlienci";
+            this.dataBaseSystemKlienci.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // przycisk_usun_rekord_klienta
+            // 
+            this.przycisk_usun_rekord_klienta.BackColor = System.Drawing.Color.PapayaWhip;
+            this.przycisk_usun_rekord_klienta.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.przycisk_usun_rekord_klienta.ForeColor = System.Drawing.Color.Peru;
+            this.przycisk_usun_rekord_klienta.Location = new System.Drawing.Point(537, 508);
+            this.przycisk_usun_rekord_klienta.Name = "przycisk_usun_rekord_klienta";
+            this.przycisk_usun_rekord_klienta.Size = new System.Drawing.Size(234, 35);
+            this.przycisk_usun_rekord_klienta.TabIndex = 10;
+            this.przycisk_usun_rekord_klienta.Text = "usuń";
+            this.przycisk_usun_rekord_klienta.UseCompatibleTextRendering = true;
+            this.przycisk_usun_rekord_klienta.UseVisualStyleBackColor = false;
+            this.przycisk_usun_rekord_klienta.Click += new System.EventHandler(this.przycisk_usun_rekord_klienta_Click);
+            // 
+            // klienciTableAdapter
+            // 
+            this.klienciTableAdapter.ClearBeforeFill = true;
+            // 
             // Strona_Klientow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.ClientSize = new System.Drawing.Size(1194, 570);
+            this.ClientSize = new System.Drawing.Size(1272, 570);
             this.Controls.Add(this.przycisk_usun_rekord_klienta);
             this.Controls.Add(this.tabela_klientow);
             this.Controls.Add(this.dodaj_nowego_klienta);
@@ -247,8 +247,8 @@ namespace System_Magazynowy
             this.Text = "Strona_Klientow";
             this.Load += new System.EventHandler(this.Strona_Klientow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabela_klientow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemKlienci)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klienciBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemKlienci)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

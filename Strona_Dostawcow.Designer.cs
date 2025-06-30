@@ -150,7 +150,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.tabela_dostawcow.DefaultCellStyle = dataGridViewCellStyle3;
             this.tabela_dostawcow.EnableHeadersVisualStyles = false;
-            this.tabela_dostawcow.Location = new System.Drawing.Point(33, 100);
+            this.tabela_dostawcow.Location = new System.Drawing.Point(12, 100);
             this.tabela_dostawcow.Name = "tabela_dostawcow";
             this.tabela_dostawcow.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -167,7 +167,7 @@
             this.tabela_dostawcow.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.tabela_dostawcow.RowTemplate.Height = 24;
             this.tabela_dostawcow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tabela_dostawcow.Size = new System.Drawing.Size(1342, 464);
+            this.tabela_dostawcow.Size = new System.Drawing.Size(1551, 464);
             this.tabela_dostawcow.TabIndex = 14;
             // 
             // a
@@ -270,7 +270,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(1403, 714);
+            this.ClientSize = new System.Drawing.Size(1575, 714);
             this.Controls.Add(this.tabela_dostawcow);
             this.Controls.Add(this.przycisk_usun_rekord_dostawcy);
             this.Controls.Add(this.dodaj_nowego_dostawce);

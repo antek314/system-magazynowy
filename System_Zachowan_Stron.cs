@@ -37,7 +37,6 @@ namespace System_Magazynowy
 
         public void ZapelnijTabeleDanymi(ref DataGridView tabela, string zapytanie)
         {
-            //string sql = "SELECT * FROM Klienci";
             using (conn)
             {
                 using (SqlDataAdapter sda = new SqlDataAdapter(zapytanie, conn))
@@ -50,6 +49,12 @@ namespace System_Magazynowy
                 }
             }
 
+        }
+
+        public void OswiezDaneWTabeli(ref DataGridView tabela, string zapytanie)
+        {
+            tabela.ClearSelection();
+            ZapelnijTabeleDanymi(ref tabela, zapytanie);
         }
     }
 }

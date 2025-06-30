@@ -38,8 +38,6 @@ namespace System_Magazynowy
 
         private void Strona_Klientow_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataBaseSystemKlienci.Klienci' table. You can move, or remove it, as needed.
-            this.klienciTableAdapter.Fill(this.dataBaseSystemKlienci.Klienci);
             string zapytanie = "SELECT * FROM Klienci";
 
             System_Zachowan_Stron zaladuj_tabele = new System_Zachowan_Stron();
