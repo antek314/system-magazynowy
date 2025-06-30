@@ -36,7 +36,7 @@ namespace System_Magazynowy
             this.cofnij_do_strony_glownej = new System.Windows.Forms.Button();
             this.tytul_klienci = new System.Windows.Forms.Label();
             this.dodaj_nowego_klienta = new System.Windows.Forms.Button();
-            this.dataBaseSystemDataSet = new System_Magazynowy.DataBaseSystemDataSet();
+            this.dataBaseSystemKlienci = new System_Magazynowy.DataBaseSystemDataSet();
             this.klienciBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.klienciTableAdapter = new System_Magazynowy.DataBaseSystemDataSetTableAdapters.KlienciTableAdapter();
             this.tabela_klientow = new System.Windows.Forms.DataGridView();
@@ -49,7 +49,7 @@ namespace System_Magazynowy
             this.dataDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dochodDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.przycisk_usun_rekord_klienta = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemKlienci)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klienciBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabela_klientow)).BeginInit();
             this.SuspendLayout();
@@ -93,15 +93,15 @@ namespace System_Magazynowy
             this.dodaj_nowego_klienta.UseVisualStyleBackColor = false;
             this.dodaj_nowego_klienta.Click += new System.EventHandler(this.dodaj_klienta_Click);
             // 
-            // dataBaseSystemDataSet
+            // dataBaseSystemKlienci
             // 
-            this.dataBaseSystemDataSet.DataSetName = "DataBaseSystemDataSet";
-            this.dataBaseSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataBaseSystemKlienci.DataSetName = "DataBaseSystemKlienci";
+            this.dataBaseSystemKlienci.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // klienciBindingSource
             // 
             this.klienciBindingSource.DataMember = "Klienci";
-            this.klienciBindingSource.DataSource = this.dataBaseSystemDataSet;
+            this.klienciBindingSource.DataSource = this.dataBaseSystemKlienci;
             // 
             // klienciTableAdapter
             // 
@@ -253,7 +253,7 @@ namespace System_Magazynowy
             this.Name = "Strona_Klientow";
             this.Text = "Strona_Klientow";
             this.Load += new System.EventHandler(this.Strona_Klientow_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemKlienci)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klienciBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabela_klientow)).EndInit();
             this.ResumeLayout(false);
@@ -266,7 +266,7 @@ namespace System_Magazynowy
         private System.Windows.Forms.Button cofnij_do_strony_glownej;
         private System.Windows.Forms.Label tytul_klienci;
         private System.Windows.Forms.Button dodaj_nowego_klienta;
-        private DataBaseSystemDataSet dataBaseSystemDataSet;
+        private DataBaseSystemDataSet dataBaseSystemKlienci;
         private BindingSource klienciBindingSource;
         private DataBaseSystemDataSetTableAdapters.KlienciTableAdapter klienciTableAdapter;
         private DataGridView tabela_klientow;

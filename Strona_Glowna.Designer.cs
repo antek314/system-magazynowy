@@ -43,13 +43,14 @@
             this.przejdz_do_strony_dostawcow = new System.Windows.Forms.Button();
             this.przejdz_do_strony_zamowien = new System.Windows.Forms.Button();
             this.tabela_produktow = new System.Windows.Forms.DataGridView();
-            this.produktyBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dataBaseSystemProdukty = new System_Magazynowy.DataBaseSystemProdukty();
-            this.produktyTableAdapter1 = new System_Magazynowy.DataBaseSystemProduktyTableAdapters.ProduktyTableAdapter();
+            this.produktyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.produktyTableAdapter = new System_Magazynowy.DataBaseSystemProduktyTableAdapters.ProduktyTableAdapter();
             this.a = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idproduktuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazwaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dostawcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pulkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.liczbaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cenahurtowaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,8 +59,8 @@
             this.kodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tabela_produktow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produktyBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemProdukty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produktyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tytul_systemu
@@ -200,6 +201,7 @@
             this.idproduktuDataGridViewTextBoxColumn,
             this.nazwaDataGridViewTextBoxColumn,
             this.dostawcaDataGridViewTextBoxColumn,
+            this.pulkaDataGridViewTextBoxColumn,
             this.liczbaDataGridViewTextBoxColumn,
             this.cenaDataGridViewTextBoxColumn,
             this.cenahurtowaDataGridViewTextBoxColumn,
@@ -207,7 +209,7 @@
             this.wartoscDataGridViewTextBoxColumn,
             this.kodDataGridViewTextBoxColumn,
             this.dataDataGridViewTextBoxColumn});
-            this.tabela_produktow.DataSource = this.produktyBindingSource2;
+            this.tabela_produktow.DataSource = this.produktyBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.BlanchedAlmond;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -237,19 +239,19 @@
             this.tabela_produktow.Size = new System.Drawing.Size(1163, 552);
             this.tabela_produktow.TabIndex = 18;
             // 
-            // produktyBindingSource2
-            // 
-            this.produktyBindingSource2.DataMember = "Produkty";
-            this.produktyBindingSource2.DataSource = this.dataBaseSystemProdukty;
-            // 
             // dataBaseSystemProdukty
             // 
             this.dataBaseSystemProdukty.DataSetName = "DataBaseSystemProdukty";
             this.dataBaseSystemProdukty.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // produktyTableAdapter1
+            // produktyBindingSource
             // 
-            this.produktyTableAdapter1.ClearBeforeFill = true;
+            this.produktyBindingSource.DataMember = "Produkty";
+            this.produktyBindingSource.DataSource = this.dataBaseSystemProdukty;
+            // 
+            // produktyTableAdapter
+            // 
+            this.produktyTableAdapter.ClearBeforeFill = true;
             // 
             // a
             // 
@@ -266,7 +268,7 @@
             this.idproduktuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idproduktuDataGridViewTextBoxColumn.Name = "idproduktuDataGridViewTextBoxColumn";
             this.idproduktuDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idproduktuDataGridViewTextBoxColumn.Width = 35;
+            this.idproduktuDataGridViewTextBoxColumn.Width = 25;
             // 
             // nazwaDataGridViewTextBoxColumn
             // 
@@ -283,6 +285,14 @@
             this.dostawcaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.dostawcaDataGridViewTextBoxColumn.Name = "dostawcaDataGridViewTextBoxColumn";
             this.dostawcaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // pulkaDataGridViewTextBoxColumn
+            // 
+            this.pulkaDataGridViewTextBoxColumn.DataPropertyName = "pulka";
+            this.pulkaDataGridViewTextBoxColumn.HeaderText = "pulka";
+            this.pulkaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.pulkaDataGridViewTextBoxColumn.Name = "pulkaDataGridViewTextBoxColumn";
+            this.pulkaDataGridViewTextBoxColumn.Width = 125;
             // 
             // liczbaDataGridViewTextBoxColumn
             // 
@@ -360,8 +370,8 @@
             this.Name = "Strona_Glowna";
             this.Load += new System.EventHandler(this.Strona_Glowna_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabela_produktow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produktyBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemProdukty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produktyBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,13 +388,14 @@
         private System.Windows.Forms.Button przejdz_do_strony_dostawcow;
         private System.Windows.Forms.Button przejdz_do_strony_zamowien;
         private System.Windows.Forms.DataGridView tabela_produktow;
-        private DataBaseSystemProduktyTableAdapters.ProduktyTableAdapter produktyTableAdapter1;
-        private System.Windows.Forms.BindingSource produktyBindingSource2;
         private DataBaseSystemProdukty dataBaseSystemProdukty;
+        private System.Windows.Forms.BindingSource produktyBindingSource;
+        private DataBaseSystemProduktyTableAdapters.ProduktyTableAdapter produktyTableAdapter;
         private System.Windows.Forms.DataGridViewCheckBoxColumn a;
         private System.Windows.Forms.DataGridViewTextBoxColumn idproduktuDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nazwaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dostawcaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pulkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn liczbaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cenaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cenahurtowaDataGridViewTextBoxColumn;

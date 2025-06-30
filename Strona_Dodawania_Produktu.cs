@@ -44,10 +44,10 @@ namespace System_Magazynowy
             {
                 data = dat2.Text;
             }
-            Produkt dostawca = new Produkt(nazwaTextBox.Text, wybierz_dostawce.Text, Int32.Parse(wpisz_liczbe.Text), float.Parse(wpisz_cene.Text), float.Parse(wpisz_cene_hurtowa.Text), wpisz_opis.Text, wpisz_kod.Text, float.Parse(wpisz_wage.Text), wpisz_wymiary.Text, data);
+            Produkt dostawca = new Produkt(nazwaTextBox.Text, wybierz_dostawce.Text, Int32.Parse(wpisz_liczbe.Text), float.Parse(wpisz_cene.Text), float.Parse(wpisz_cene_hurtowa.Text), wpisz_pulke.Text, wpisz_opis.Text, wpisz_kod.Text, float.Parse(wpisz_wage.Text), wpisz_wymiary.Text, data);
             string a = wybierz_dostawce.Text;
             string b = nazwaTextBox.Text;
-            string c = wpisz_liczbe.ToString();
+            string c = Int32.Parse(wpisz_liczbe.Text).ToString();
             this.Close();
             MessageBox.Show("Dostawca " + a + " dostarczył produkt " + b + ". Teraz w bazie jest " + c + " sztuk " + nazwaTextBox + ".");
         }

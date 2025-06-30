@@ -56,6 +56,8 @@
             this.wpisz_wage = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.wpisz_pulke = new System.Windows.Forms.TextBox();
+            this.pulka_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dostawcyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDostawcy)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +67,7 @@
             this.dat1.AutoSize = true;
             this.dat1.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dat1.ForeColor = System.Drawing.Color.Peru;
-            this.dat1.Location = new System.Drawing.Point(201, 444);
+            this.dat1.Location = new System.Drawing.Point(185, 444);
             this.dat1.Name = "dat1";
             this.dat1.Size = new System.Drawing.Size(202, 24);
             this.dat1.TabIndex = 56;
@@ -76,7 +78,7 @@
             // 
             this.dat2.Font = new System.Drawing.Font("Monotxt_IV25", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dat2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dat2.Location = new System.Drawing.Point(194, 471);
+            this.dat2.Location = new System.Drawing.Point(178, 471);
             this.dat2.Name = "dat2";
             this.dat2.Size = new System.Drawing.Size(209, 30);
             this.dat2.TabIndex = 55;
@@ -87,7 +89,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Peru;
-            this.label4.Location = new System.Drawing.Point(55, 222);
+            this.label4.Location = new System.Drawing.Point(55, 235);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 24);
             this.label4.TabIndex = 54;
@@ -98,7 +100,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Peru;
-            this.label3.Location = new System.Drawing.Point(460, 127);
+            this.label3.Location = new System.Drawing.Point(373, 339);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 24);
             this.label3.TabIndex = 52;
@@ -142,7 +144,7 @@
             this.opcje.AutoSize = true;
             this.opcje.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opcje.ForeColor = System.Drawing.Color.Peru;
-            this.opcje.Location = new System.Drawing.Point(42, 449);
+            this.opcje.Location = new System.Drawing.Point(37, 459);
             this.opcje.Name = "opcje";
             this.opcje.Size = new System.Drawing.Size(112, 28);
             this.opcje.TabIndex = 46;
@@ -163,9 +165,9 @@
             this.dodaj_dostawce.BackColor = System.Drawing.Color.PapayaWhip;
             this.dodaj_dostawce.Font = new System.Drawing.Font("Monotxt_IV25", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dodaj_dostawce.ForeColor = System.Drawing.Color.Peru;
-            this.dodaj_dostawce.Location = new System.Drawing.Point(454, 471);
+            this.dodaj_dostawce.Location = new System.Drawing.Point(440, 471);
             this.dodaj_dostawce.Name = "dodaj_dostawce";
-            this.dodaj_dostawce.Size = new System.Drawing.Size(192, 35);
+            this.dodaj_dostawce.Size = new System.Drawing.Size(188, 35);
             this.dodaj_dostawce.TabIndex = 44;
             this.dodaj_dostawce.Text = "dodaj";
             this.dodaj_dostawce.UseCompatibleTextRendering = true;
@@ -179,7 +181,7 @@
             this.zamknij_dodawanie_dostawcy.ForeColor = System.Drawing.Color.Peru;
             this.zamknij_dodawanie_dostawcy.Location = new System.Drawing.Point(689, 471);
             this.zamknij_dodawanie_dostawcy.Name = "zamknij_dodawanie_dostawcy";
-            this.zamknij_dodawanie_dostawcy.Size = new System.Drawing.Size(209, 35);
+            this.zamknij_dodawanie_dostawcy.Size = new System.Drawing.Size(195, 35);
             this.zamknij_dodawanie_dostawcy.TabIndex = 43;
             this.zamknij_dodawanie_dostawcy.Text = "anuluj";
             this.zamknij_dodawanie_dostawcy.UseCompatibleTextRendering = true;
@@ -214,16 +216,16 @@
             // wpisz_liczbe
             // 
             this.wpisz_liczbe.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wpisz_liczbe.Location = new System.Drawing.Point(454, 151);
+            this.wpisz_liczbe.Location = new System.Drawing.Point(367, 363);
             this.wpisz_liczbe.Name = "wpisz_liczbe";
-            this.wpisz_liczbe.Size = new System.Drawing.Size(135, 32);
+            this.wpisz_liczbe.Size = new System.Drawing.Size(138, 32);
             this.wpisz_liczbe.TabIndex = 62;
             this.wpisz_liczbe.Text = "0";
             // 
             // wpisz_cene
             // 
             this.wpisz_cene.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wpisz_cene.Location = new System.Drawing.Point(16, 246);
+            this.wpisz_cene.Location = new System.Drawing.Point(16, 259);
             this.wpisz_cene.Name = "wpisz_cene";
             this.wpisz_cene.Size = new System.Drawing.Size(167, 32);
             this.wpisz_cene.TabIndex = 63;
@@ -232,7 +234,7 @@
             // wpisz_cene_hurtowa
             // 
             this.wpisz_cene_hurtowa.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wpisz_cene_hurtowa.Location = new System.Drawing.Point(208, 246);
+            this.wpisz_cene_hurtowa.Location = new System.Drawing.Point(208, 259);
             this.wpisz_cene_hurtowa.Name = "wpisz_cene_hurtowa";
             this.wpisz_cene_hurtowa.Size = new System.Drawing.Size(198, 32);
             this.wpisz_cene_hurtowa.TabIndex = 65;
@@ -243,7 +245,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Peru;
-            this.label1.Location = new System.Drawing.Point(207, 222);
+            this.label1.Location = new System.Drawing.Point(207, 235);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(202, 24);
             this.label1.TabIndex = 64;
@@ -252,10 +254,10 @@
             // wpisz_opis
             // 
             this.wpisz_opis.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wpisz_opis.Location = new System.Drawing.Point(454, 246);
+            this.wpisz_opis.Location = new System.Drawing.Point(440, 151);
             this.wpisz_opis.Multiline = true;
             this.wpisz_opis.Name = "wpisz_opis";
-            this.wpisz_opis.Size = new System.Drawing.Size(444, 149);
+            this.wpisz_opis.Size = new System.Drawing.Size(444, 135);
             this.wpisz_opis.TabIndex = 66;
             // 
             // label5
@@ -263,7 +265,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Peru;
-            this.label5.Location = new System.Drawing.Point(656, 127);
+            this.label5.Location = new System.Drawing.Point(748, 336);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 24);
             this.label5.TabIndex = 68;
@@ -273,18 +275,18 @@
             // wpisz_kod
             // 
             this.wpisz_kod.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wpisz_kod.Location = new System.Drawing.Point(646, 151);
+            this.wpisz_kod.Location = new System.Drawing.Point(716, 363);
             this.wpisz_kod.Name = "wpisz_kod";
-            this.wpisz_kod.Size = new System.Drawing.Size(252, 32);
+            this.wpisz_kod.Size = new System.Drawing.Size(168, 32);
             this.wpisz_kod.TabIndex = 67;
             this.wpisz_kod.Text = "0000 0000";
             // 
             // wpisz_wymiary
             // 
             this.wpisz_wymiary.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wpisz_wymiary.Location = new System.Drawing.Point(208, 363);
+            this.wpisz_wymiary.Location = new System.Drawing.Point(16, 363);
             this.wpisz_wymiary.Name = "wpisz_wymiary";
-            this.wpisz_wymiary.Size = new System.Drawing.Size(195, 32);
+            this.wpisz_wymiary.Size = new System.Drawing.Size(167, 32);
             this.wpisz_wymiary.TabIndex = 72;
             // 
             // label6
@@ -292,7 +294,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Peru;
-            this.label6.Location = new System.Drawing.Point(207, 336);
+            this.label6.Location = new System.Drawing.Point(15, 336);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 24);
             this.label6.TabIndex = 71;
@@ -301,9 +303,9 @@
             // wpisz_wage
             // 
             this.wpisz_wage.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wpisz_wage.Location = new System.Drawing.Point(16, 363);
+            this.wpisz_wage.Location = new System.Drawing.Point(211, 363);
             this.wpisz_wage.Name = "wpisz_wage";
-            this.wpisz_wage.Size = new System.Drawing.Size(167, 32);
+            this.wpisz_wage.Size = new System.Drawing.Size(131, 32);
             this.wpisz_wage.TabIndex = 70;
             this.wpisz_wage.Text = "1";
             // 
@@ -312,7 +314,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Peru;
-            this.label7.Location = new System.Drawing.Point(52, 336);
+            this.label7.Location = new System.Drawing.Point(226, 336);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 24);
             this.label7.TabIndex = 69;
@@ -323,11 +325,30 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Peru;
-            this.label8.Location = new System.Drawing.Point(460, 222);
+            this.label8.Location = new System.Drawing.Point(483, 124);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 24);
             this.label8.TabIndex = 73;
             this.label8.Text = "opis";
+            // 
+            // wpisz_pulke
+            // 
+            this.wpisz_pulke.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wpisz_pulke.Location = new System.Drawing.Point(532, 363);
+            this.wpisz_pulke.Name = "wpisz_pulke";
+            this.wpisz_pulke.Size = new System.Drawing.Size(159, 32);
+            this.wpisz_pulke.TabIndex = 75;
+            // 
+            // pulka_label
+            // 
+            this.pulka_label.AutoSize = true;
+            this.pulka_label.Font = new System.Drawing.Font("Monotxt_IV25", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pulka_label.ForeColor = System.Drawing.Color.Peru;
+            this.pulka_label.Location = new System.Drawing.Point(538, 336);
+            this.pulka_label.Name = "pulka_label";
+            this.pulka_label.Size = new System.Drawing.Size(90, 24);
+            this.pulka_label.TabIndex = 74;
+            this.pulka_label.Text = "pulka";
             // 
             // Strona_Dodawania_Produktu
             // 
@@ -335,6 +356,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
             this.ClientSize = new System.Drawing.Size(927, 548);
+            this.Controls.Add(this.wpisz_pulke);
+            this.Controls.Add(this.pulka_label);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.wpisz_wymiary);
             this.Controls.Add(this.label6);
@@ -397,5 +420,7 @@
         private System.Windows.Forms.TextBox wpisz_wage;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox wpisz_pulke;
+        private System.Windows.Forms.Label pulka_label;
     }
 }

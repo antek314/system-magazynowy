@@ -41,6 +41,8 @@ namespace System_Magazynowy
 
         private void Strona_Glowna_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataBaseSystemProdukty.Produkty' table. You can move, or remove it, as needed.
+            this.produktyTableAdapter.Fill(this.dataBaseSystemProdukty.Produkty);
             string zapytanie = "SELECT * FROM Produkty";
 
             System_Zachowan_Stron zaladuj_tabele = new System_Zachowan_Stron();

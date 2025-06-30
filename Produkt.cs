@@ -21,6 +21,7 @@ namespace System_Magazynowy
         private float cena_hurtowa;
         private float marza;
         private float wartosc;
+        private string pulka;
         private float waga;
         private string wymiary;
         private string opis;
@@ -33,7 +34,7 @@ namespace System_Magazynowy
             marza = cena - cena_hurtowa;
             wartosc = liczba * cena;
 
-            string zapytanie = "Insert Into Produkty(nazwa,dostawca,liczba,cena,cena_hurtowa,marza,wartosc,opis,kod,waga,wymiary,data)Values(@nazwa,@dostawca,@liczba,@cena,@cena_hurtowa,@marza,@wartosc,@opis,@kod,@waga,@wymiary,@data_dodania)";
+            string zapytanie = "Insert Into Produkty(nazwa,dostawca,liczba,cena,cena_hurtowa,marza,wartosc,opis,kod,waga,wymiary,data,pulka)Values(@nazwa,@dostawca,@liczba,@cena,@cena_hurtowa,@marza,@wartosc,@opis,@kod,@waga,@wymiary,@data_dodania,@pulka)";
             cmd = new SqlCommand(zapytanie, conn);
             cmd.Parameters.Clear();
 
@@ -46,6 +47,7 @@ namespace System_Magazynowy
             cmd.Parameters.AddWithValue("marza", marza);
             cmd.Parameters.AddWithValue("wartosc", wartosc);
 
+            cmd.Parameters.AddWithValue("pulka", pulka);
             cmd.Parameters.AddWithValue("opis", opis);
             cmd.Parameters.AddWithValue("kod", kod);
             cmd.Parameters.AddWithValue("waga", waga);
@@ -77,7 +79,7 @@ namespace System_Magazynowy
             conn.Close();
         }
 
-        public Produkt(string a, string b, int c, float d, float e, string f, string g, float h, string i, string j)
+        public Produkt(string a, string b, int c, float d, float e, string f, string g, string h, float i, string j, string k)
         {
             dostawca_= new Dostawca(b);
             nazwa = a;
@@ -85,12 +87,13 @@ namespace System_Magazynowy
             liczba = c;
             cena = d;
             cena_hurtowa = e;
+            pulka = f;
 
-            opis = f;
-            kod = g;
-            waga = h;
-            wymiary = i;
-            data_dodania = j;
+            opis = g;
+            kod = h;
+            waga = i;
+            wymiary = j;
+            data_dodania = k;
 
             DodajDoBazyDanych();
             DopiszNumerId();
