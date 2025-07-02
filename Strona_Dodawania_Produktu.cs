@@ -9,11 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using System.Data.SqlClient;
+
 
 namespace System_Magazynowy
 {
     public partial class Strona_Dodawania_Produktu : Form
     {
+        public System_Zachowan_Stron system_zachowan_stron = new System_Zachowan_Stron();
+
         public Strona_Dodawania_Produktu()
         {
             InitializeComponent();
@@ -22,7 +26,9 @@ namespace System_Magazynowy
         private void Strona_Dodawania_Produktu_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dataBaseSystemDostawcy.Dostawcy' table. You can move, or remove it, as needed.
-            this.dostawcyTableAdapter.Fill(this.dataBaseSystemDostawcy.Dostawcy);
+            //this.dostawcyTableAdapter.Fill(this.dataBaseSystemDostawcy.Dostawcy);
+            string zapytanie = "Select Firma FROM Dostawcy";
+            system_zachowan_stron.ZapelnijComboboxDanymi(ref wybierz_dostawce, zapytanie);
         }
 
         private void zamknij_dodawanie_dostawcy_Click(object sender, EventArgs e)
@@ -43,14 +49,19 @@ namespace System_Magazynowy
             {
                 data = dat2.Text;
             }
-            Produkt dostawca = new Produkt(nazwaTextBox.Text, wybierz_dostawce.Text, Int32.Parse(wpisz_liczbe.Text), float.Parse(wpisz_cene.Text), float.Parse(wpisz_cene_hurtowa.Text), wpisz_pulke.Text, wpisz_opis.Text, wpisz_kod.Text, float.Parse(wpisz_wage.Text), wpisz_wymiary.Text, data);
+            Produkt produkt = new Produkt(nazwaTextBox.Text, wybierz_dostawce.Text, int.Parse(wpisz_liczbe.Text), float.Parse(wpisz_cene.Text), float.Parse(wpisz_cene_hurtowa.Text), wpisz_pulke.Text, wpisz_opis.Text, wpisz_kod.Text, float.Parse(wpisz_wage.Text), wpisz_wymiary.Text, data);
             string a = wybierz_dostawce.Text;
             string b = nazwaTextBox.Text;
-            string c = Int32.Parse(wpisz_liczbe.Text).ToString();
+            string c = wpisz_liczbe.Text;
+            float wartosc = int.Parse(wpisz_liczbe.Text) * float.Parse(wpisz_cene_hurtowa.Text);
+            Dostawca dostawca = new Dostawca(wartosc, wybierz_dostawce.Text);
+
+
             this.Close();
-            MessageBox.Show("Dostawca " + a + " dostarczył produkt " + b + ". Teraz w bazie jest " + c + " sztuk " + nazwaTextBox + ".");
-            System_Zachowan_Stron odswiezanie = new System_Zachowan_Stron();
-            odswiezanie.OswiezDaneWTabeli(ref tabela, zapytanie);
+            system_zachowan_stron.OswiezDaneWTabeli(ref system_zachowan_stron.ZwrocTabele(), system_zachowan_stron.ZwrocZapytanie());
+
+            MessageBox.Show("Dostawca " + a + " dostarczył produkt " + b + ". Teraz w bazie jest " + c + " sztuk " + nazwaTextBox.Text + ".");
+
         }
     }
 }

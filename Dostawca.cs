@@ -58,8 +58,6 @@ namespace System_Magazynowy
         }
         private void UaktualnijLiczbeDostawcow()
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
-            SqlCommand cmd;
             string zapytanie = "Select COUNT(*) From Dostawcy";
             cmd = new SqlCommand(zapytanie, conn);
             cmd.Parameters.Clear();
@@ -82,6 +80,32 @@ namespace System_Magazynowy
             DodajDoBazyDanych();
             DopiszNumerId();
             UaktualnijLiczbeDostawcow();
+        }
+        private float ZwrocWartoscKosztow(string firma)
+        {
+            string zapytanie = "Select koszty From Dostawcy Where firma = @firma";
+            cmd = new SqlCommand(zapytanie, conn);
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("firma", firma);
+            conn.Open();
+            float koszty = (float)cmd.ExecuteScalar();
+            conn.Close();
+            return koszty;
+        }
+        public Dostawca(float wartosc, string firma)
+        {
+            float koszty_dotychczasowe = ZwrocWartoscKosztow(firma);
+            float wartosc_kosztow = koszty_dotychczasowe + wartosc;
+
+            string zapytanie = "UPDATE Dostawcy SET koszty = @koszty Where firma = @firma";
+            cmd = new SqlCommand(zapytanie, conn);
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("koszty", wartosc_kosztow);
+            cmd.Parameters.AddWithValue("firma", firma);
+
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
         }
         public Dostawca(string a)
         {

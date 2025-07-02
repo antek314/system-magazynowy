@@ -2,7 +2,7 @@
 
 namespace System_Magazynowy
 {
-    partial class Strona_Dodawania_Produktu
+     partial class Strona_Dodawania_Produktu
     {
         /// <summary>
         /// Required designer variable.
@@ -21,11 +21,11 @@ namespace System_Magazynowy
             }
             base.Dispose(disposing);
         }
-        public void PrzekazReferencjeTabeli( ref DataGridView t, string pytanie) 
+        /*public void PrzekazReferencjeTabeli( ref DataGridView t, string pytanie) 
         {
             tabela = t;
             zapytanie = pytanie;
-        }
+        }*/
 
         #region Windows Form Designer generated code
 
@@ -35,7 +35,6 @@ namespace System_Magazynowy
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.dat1 = new System.Windows.Forms.Label();
             this.dat2 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
@@ -62,11 +61,6 @@ namespace System_Magazynowy
             this.label8 = new System.Windows.Forms.Label();
             this.wpisz_pulke = new System.Windows.Forms.TextBox();
             this.pulka_label = new System.Windows.Forms.Label();
-            this.dataBaseSystemDostawcy = new System_Magazynowy.DataBaseSystemDostawcy();
-            this.dostawcyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dostawcyTableAdapter = new System_Magazynowy.DataBaseSystemDostawcyTableAdapters.DostawcyTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDostawcy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dostawcyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dat1
@@ -197,8 +191,6 @@ namespace System_Magazynowy
             // 
             // wybierz_dostawce
             // 
-            this.wybierz_dostawce.DataSource = this.dostawcyBindingSource;
-            this.wybierz_dostawce.DisplayMember = "firma";
             this.wybierz_dostawce.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wybierz_dostawce.FormattingEnabled = true;
             this.wybierz_dostawce.Location = new System.Drawing.Point(208, 151);
@@ -268,6 +260,7 @@ namespace System_Magazynowy
             // wpisz_kod
             // 
             this.wpisz_kod.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.wpisz_kod.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.wpisz_kod.Font = new System.Drawing.Font("Monotxt_IV25", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wpisz_kod.ImeMode = System.Windows.Forms.ImeMode.On;
             this.wpisz_kod.Location = new System.Drawing.Point(716, 363);
@@ -275,7 +268,6 @@ namespace System_Magazynowy
             this.wpisz_kod.Size = new System.Drawing.Size(168, 32);
             this.wpisz_kod.TabIndex = 9;
             this.wpisz_kod.Text = "0000 0000";
-            this.wpisz_kod.UseWaitCursor = true;
             // 
             // wpisz_wymiary
             // 
@@ -344,21 +336,7 @@ namespace System_Magazynowy
             this.pulka_label.Name = "pulka_label";
             this.pulka_label.Size = new System.Drawing.Size(90, 24);
             this.pulka_label.TabIndex = 74;
-            this.pulka_label.Text = "pulka";
-            // 
-            // dataBaseSystemDostawcy
-            // 
-            this.dataBaseSystemDostawcy.DataSetName = "DataBaseSystemDostawcy";
-            this.dataBaseSystemDostawcy.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dostawcyBindingSource
-            // 
-            this.dostawcyBindingSource.DataMember = "Dostawcy";
-            this.dostawcyBindingSource.DataSource = this.dataBaseSystemDostawcy;
-            // 
-            // dostawcyTableAdapter
-            // 
-            this.dostawcyTableAdapter.ClearBeforeFill = true;
+            this.pulka_label.Text = "półka";
             // 
             // Strona_Dodawania_Produktu
             // 
@@ -395,8 +373,6 @@ namespace System_Magazynowy
             this.Name = "Strona_Dodawania_Produktu";
             this.Text = "Strona_Dodawania_Produktu";
             this.Load += new System.EventHandler(this.Strona_Dodawania_Produktu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemDostawcy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dostawcyBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,12 +405,9 @@ namespace System_Magazynowy
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox wpisz_pulke;
         private System.Windows.Forms.Label pulka_label;
-        private DataBaseSystemDostawcy dataBaseSystemDostawcy;
-        private System.Windows.Forms.BindingSource dostawcyBindingSource;
-        private DataBaseSystemDostawcyTableAdapters.DostawcyTableAdapter dostawcyTableAdapter;
 
 
-        private DataGridView tabela;
-        private string zapytanie;
+        //private DataGridView tabela;
+        //private string zapytanie;
     }
 }

@@ -256,6 +256,7 @@
             this.ForeColor = System.Drawing.Color.PapayaWhip;
             this.Name = "Strona_Dodawania_Klienta";
             this.Text = "Strona_Dodawania_Klienta";
+            this.Load += new System.EventHandler(this.Strona_Dodawania_Klienta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

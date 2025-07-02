@@ -50,7 +50,7 @@ namespace System_Magazynowy
         private void dodaj_nowy_produkt_Click(object sender, EventArgs e)
         {
             Strona_Dodawania_Produktu dodaj = new Strona_Dodawania_Produktu();
-            dodaj.PrzekazReferencjeTabeli(ref tabela_produktow, zapytanie);
+            dodaj.system_zachowan_stron.PrzekazReferencjeTabeli(ref tabela_produktow, zapytanie);
             dodaj.Show();
         }
 
@@ -62,17 +62,12 @@ namespace System_Magazynowy
             usuwanie.Usun_Z_Tabeli(ref tabela_produktow, usun);
         }
 
-        private void Tu(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            
-        }
-
         private void Kliknieto(object sender, DataGridViewCellEventArgs e)
         {
             int index = int.Parse(e.RowIndex.ToString());
             int id = int.Parse(this.tabela_produktow.Rows[index].Cells[1].Value.ToString());
             Szczegoly_Produktu dodaj = new Szczegoly_Produktu();
-            dodaj.PrzekazId(id);
+            dodaj.system_zachowan_stron.PrzekazId(id);
             dodaj.Show();
         }
     }

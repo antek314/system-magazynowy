@@ -43,6 +43,9 @@
             this.przejdz_do_strony_dostawcow = new System.Windows.Forms.Button();
             this.przejdz_do_strony_zamowien = new System.Windows.Forms.Button();
             this.tabela_produktow = new System.Windows.Forms.DataGridView();
+            this.produktyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataBaseSystemProdukty = new System_Magazynowy.DataBaseSystemProdukty();
+            this.produktyTableAdapter = new System_Magazynowy.DataBaseSystemProduktyTableAdapters.ProduktyTableAdapter();
             this.a = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idproduktuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazwaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,9 +58,6 @@
             this.wartoscDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produktyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataBaseSystemProdukty = new System_Magazynowy.DataBaseSystemProdukty();
-            this.produktyTableAdapter = new System_Magazynowy.DataBaseSystemProduktyTableAdapters.ProduktyTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tabela_produktow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produktyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseSystemProdukty)).BeginInit();
@@ -239,7 +239,20 @@
             this.tabela_produktow.Size = new System.Drawing.Size(1163, 552);
             this.tabela_produktow.TabIndex = 18;
             this.tabela_produktow.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Kliknieto);
-            this.tabela_produktow.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Tu);
+            // 
+            // produktyBindingSource
+            // 
+            this.produktyBindingSource.DataMember = "Produkty";
+            this.produktyBindingSource.DataSource = this.dataBaseSystemProdukty;
+            // 
+            // dataBaseSystemProdukty
+            // 
+            this.dataBaseSystemProdukty.DataSetName = "DataBaseSystemProdukty";
+            this.dataBaseSystemProdukty.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // produktyTableAdapter
+            // 
+            this.produktyTableAdapter.ClearBeforeFill = true;
             // 
             // a
             // 
@@ -276,8 +289,8 @@
             // 
             // pulkaDataGridViewTextBoxColumn
             // 
-            this.pulkaDataGridViewTextBoxColumn.DataPropertyName = "pulka";
-            this.pulkaDataGridViewTextBoxColumn.HeaderText = "pulka";
+            this.pulkaDataGridViewTextBoxColumn.DataPropertyName = "polka";
+            this.pulkaDataGridViewTextBoxColumn.HeaderText = "półka";
             this.pulkaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.pulkaDataGridViewTextBoxColumn.Name = "pulkaDataGridViewTextBoxColumn";
             this.pulkaDataGridViewTextBoxColumn.Width = 125;
@@ -337,20 +350,6 @@
             this.dataDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
             this.dataDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // produktyBindingSource
-            // 
-            this.produktyBindingSource.DataMember = "Produkty";
-            this.produktyBindingSource.DataSource = this.dataBaseSystemProdukty;
-            // 
-            // dataBaseSystemProdukty
-            // 
-            this.dataBaseSystemProdukty.DataSetName = "DataBaseSystemProdukty";
-            this.dataBaseSystemProdukty.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // produktyTableAdapter
-            // 
-            this.produktyTableAdapter.ClearBeforeFill = true;
             // 
             // Strona_Glowna
             // 

@@ -268,6 +268,7 @@
             this.Controls.Add(this.zamknij_dodawanie_dostawcy);
             this.Name = "Strona_Dodawania_Dostawcy";
             this.Text = "Strona_Dodawania_Dostawcy";
+            this.Load += new System.EventHandler(this.Strona_Dodawania_Dostawcy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

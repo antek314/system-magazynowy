@@ -12,6 +12,8 @@ namespace System_Magazynowy
 {
     public partial class Strona_Dodawania_Dostawcy : Form
     {
+
+        public System_Zachowan_Stron system_zachowan_stron = new System_Zachowan_Stron();
         public Strona_Dodawania_Dostawcy()
         {
             InitializeComponent();
@@ -28,6 +30,9 @@ namespace System_Magazynowy
             string a = imieTextBox.Text;
             string b = nazwiskoTextBox.Text;
             this.Close();
+
+            system_zachowan_stron.OswiezDaneWTabeli(ref system_zachowan_stron.ZwrocTabele(), system_zachowan_stron.ZwrocZapytanie());
+
             MessageBox.Show("Dodano nowego dostawce " + a + " " + b + ". Teraz w bazie jest " + dostawca.ZwrocLiczbeDostawcow() + " dostawców.");
         }
 
@@ -44,6 +49,11 @@ namespace System_Magazynowy
             this.ko2.Visible = checkBox1.Checked;
             this.tr1.Visible = checkBox1.Checked;
             this.tr2.Visible = checkBox1.Checked;
+
+        }
+
+        private void Strona_Dodawania_Dostawcy_Load(object sender, EventArgs e)
+        {
 
         }
     }

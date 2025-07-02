@@ -13,8 +13,11 @@ namespace System_Magazynowy
 {
     public partial class Strona_Dostawcow : Form
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
-        SqlCommand cmd;
+        private SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
+        private SqlCommand cmd;
+
+        private string zapytanie = "SELECT * FROM Dostawcy";
+
 
         public Strona_Dostawcow()
         {
@@ -24,6 +27,7 @@ namespace System_Magazynowy
         private void dodaj_nowego_dostawce_Click(object sender, EventArgs e)
         {
             Strona_Dodawania_Dostawcy dodaj = new Strona_Dodawania_Dostawcy();
+            dodaj.system_zachowan_stron.PrzekazReferencjeTabeli(ref tabela_dostawcow, zapytanie);
             dodaj.Show();
         }
 
@@ -36,8 +40,6 @@ namespace System_Magazynowy
 
         private void Strona_Dostawcow_Load(object sender, EventArgs e)
         {
-            string zapytanie = "SELECT * FROM Dostawcy";
-
             System_Zachowan_Stron zaladuj_tabele = new System_Zachowan_Stron();
             zaladuj_tabele.ZapelnijTabeleDanymi(ref tabela_dostawcow, zapytanie);
         }

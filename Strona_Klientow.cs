@@ -18,6 +18,8 @@ namespace System_Magazynowy
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\anton\OneDrive\Desktop\Informatics\Visual Studio\System_Magazynowy\DataBaseSystem.mdf"";Integrated Security=True");
         SqlCommand cmd;
 
+        string zapytanie = "SELECT * FROM Klienci";
+
         public Strona_Klientow()
         {
             InitializeComponent();
@@ -33,13 +35,12 @@ namespace System_Magazynowy
         private void dodaj_klienta_Click(object sender, EventArgs e)
         {
             Strona_Dodawania_Klienta dodaj = new Strona_Dodawania_Klienta();
+            dodaj.system_zachowan_stron.PrzekazReferencjeTabeli(ref tabela_klientow, zapytanie);
             dodaj.Show();
         }
 
         private void Strona_Klientow_Load(object sender, EventArgs e)
         {
-            string zapytanie = "SELECT * FROM Klienci";
-
             System_Zachowan_Stron zaladuj_tabele = new System_Zachowan_Stron();
             zaladuj_tabele.ZapelnijTabeleDanymi(ref tabela_klientow, zapytanie);
         }
