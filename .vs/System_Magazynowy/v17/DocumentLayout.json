@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:dostawca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_dodawania_produktu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_dodawania_produktu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\strona_dodawania_produktu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_dodawania_produktu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|c:\\users\\anton\\onedrive\\desktop\\informatics\\visual studio\\system_magazynowy\\strona_dodawania_produktu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:strona_dodawania_produktu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|c:\\users\\anton\\onedrive\\desktop\\informatics\\visual studio\\system_magazynowy\\system_zachowan_stron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\system_zachowan_stron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43B1C0E4-AD87-4468-82E3-9FF2CB186BB2}|System_Magazynowy.csproj|solutionrelative:system_zachowan_stron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -25,7 +25,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 242,
+          "DockedHeight": 340,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -40,14 +40,14 @@
               "RelativeDocumentMoniker": "Dostawca.cs",
               "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Dostawca.cs",
               "RelativeToolTip": "Dostawca.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAADwv2sAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwFkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T22:31:54.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Strona_Dodawania_Produktu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dodawania_Produktu.cs",
               "RelativeDocumentMoniker": "Strona_Dodawania_Produktu.cs",
@@ -59,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Strona_Dodawania_Produktu.cs",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\Strona_Dodawania_Produktu.cs",
               "RelativeDocumentMoniker": "Strona_Dodawania_Produktu.cs",
@@ -78,7 +78,7 @@
               "RelativeDocumentMoniker": "System_Zachowan_Stron.cs",
               "ToolTip": "C:\\Users\\anton\\OneDrive\\Desktop\\Informatics\\Visual Studio\\System_Magazynowy\\System_Zachowan_Stron.cs",
               "RelativeToolTip": "System_Zachowan_Stron.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAQwEEAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwEEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T12:17:36.546Z",
               "EditorCaption": ""
@@ -86,7 +86,7 @@
           ]
         },
         {
-          "DockedHeight": 158,
+          "DockedHeight": 60,
           "SelectedChildIndex": -1,
           "Children": [
             {

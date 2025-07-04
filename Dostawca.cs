@@ -88,7 +88,7 @@ namespace System_Magazynowy
             cmd.Parameters.Clear();
             cmd.Parameters.AddWithValue("firma", firma);
             conn.Open();
-            float koszty = (float)cmd.ExecuteScalar();
+            float koszty = float.Parse(cmd.ExecuteScalar().ToString());
             conn.Close();
             return koszty;
         }
